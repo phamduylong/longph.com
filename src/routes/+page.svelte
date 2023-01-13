@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Header from "../components/Header.svelte";
+    import SideTab from "../components/SideTab.svelte";
+    import MainPage from "../components/MainPage.svelte";
+</script>
+<div>
+    <SideTab />
+</div>
+<div><MainPage/></div>
+<style>
+
+</style>
