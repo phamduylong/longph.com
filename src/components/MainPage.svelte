@@ -21,6 +21,7 @@ Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tor
 
 <style>
     div {
-        margin-left: 16%;
+        margin-left: 25%;
+        margin-right:5%
     }
 </style>
