@@ -4,7 +4,7 @@
 	const skills = [
 		{ skill: 'NodeJs', progress: '70' },
 		{ skill: 'Express', progress: '70' },
-		{ skill: 'EJS Engine', progress: '60' },
+		{ skill: 'EJS Template', progress: '60' },
 		{ skill: 'MongoDB', progress: '50' },
 		{ skill: 'SQL', progress: '50' },
 		{ skill: 'Svelte', progress: '50' },
@@ -48,6 +48,10 @@
 	::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(0, 0, 0, 0.1);
 	}
 
 	.sidenav {
