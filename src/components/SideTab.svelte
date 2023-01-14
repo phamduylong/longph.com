@@ -28,7 +28,7 @@
 	<div id="skills_container">
 		{#each skills as skill, index}
 			<div class="skill-items">
-				{skill.skill}<Progressbar progress={skill.progress} size="h-3" color="blue" />
+				{skill.skill}<Progressbar progress={skill.progress} size="h-3" color="green" />
 			</div>
 		{/each}
 	</div>
