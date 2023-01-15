@@ -1,19 +1,21 @@
 <script>
-	const img_url = new URL('../assets/pp.jpg', import.meta.url).href;
-	import { Progressbar } from 'flowbite-svelte';
+	import Icon from './Icon.svelte';
+	import SkillItem from './SkillItem.svelte';
 	import { skills } from '../assets/data.js';
 </script>
 
 <div class="sidenav">
-	<div id="icon_container"><img id="icon" src={img_url} alt="avatar" /></div>
+	<Icon />
 
 	<strong id="skills_section_header">Skills</strong>
 	<div id="skills_container">
-		{#each skills as skill, index}
-			<div class="skill-items">
-				{skill.skill}<Progressbar progress={skill.progress} size="h-3" color="green" />
-			</div>
+		{#each skills as skill}
+			<SkillItem skill={skill.skill} progress={skill.progress} />
 		{/each}
+	</div>
+
+	<div id="contact_container">
+
 	</div>
 </div>
 
@@ -53,23 +55,6 @@
 		margin-right: 0.25%;
 	}
 
-	#icon_container {
-		height: 20%;
-		width: 100%;
-		position: absolute;
-		top: 5%;
-	}
-
-
-	#icon {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border: 2px solid black;
-		border-radius: 50%;
-		width: 50%;
-	}
 
 	#skills_section_header {
 		position: absolute;
@@ -95,14 +80,6 @@
 		margin-top: 10%;
 	}
 
-	.skill-items {
-		position: relative;
-		display: inline-block;
-		height: 2%;
-		margin: 0 auto;
-		padding: 5%;
-		font-size: 1.25vw;
-		width: 100%;
-	}
+
 
 </style>
