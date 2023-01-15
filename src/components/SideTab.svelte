@@ -116,8 +116,8 @@
 		display: inline-block;
 		height: 2%;
 		margin: 0 auto;
-		padding: 10%;
-		font-size: 1vw;
+		padding: 5%;
+		font-size: 1.25vw;
 		width: 100%;
 	}
 
