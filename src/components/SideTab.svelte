@@ -1,5 +1,5 @@
 <script>
-	const img_url = new URL('../assets/profile_pic.jpg', import.meta.url).href;
+	const img_url = new URL('../assets/pp.jpg', import.meta.url).href;
 	import { Progressbar } from 'flowbite-svelte';
 	const skills = [
 		{ skill: 'NodeJs', progress: '70' },
