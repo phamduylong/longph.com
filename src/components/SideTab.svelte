@@ -1,24 +1,7 @@
 <script>
 	const img_url = new URL('../assets/pp.jpg', import.meta.url).href;
 	import { Progressbar } from 'flowbite-svelte';
-	const skills = [
-		{ skill: 'NodeJs', progress: '70' },
-		{ skill: 'Express', progress: '70' },
-		{ skill: 'EJS Template', progress: '60' },
-		{ skill: 'MongoDB', progress: '50' },
-		{ skill: 'SQL', progress: '50' },
-		{ skill: 'Svelte', progress: '50' },
-		{ skill: 'HTML5', progress: '50' },
-		{ skill: 'CSS3', progress: '40' },
-		{ skill: 'Embedded Programming', progress: '50' },
-		{ skill: 'C', progress: '60' },
-		{ skill: 'C++', progress: '70' },
-		{ skill: 'Python', progress: '60' },
-		{ skill: 'Robot Framework', progress: '50' },
-		{ skill: 'Jenkins', progress: '40' },
-		{ skill: 'Linux', progress: '50' },
-		{ skill: 'Git', progress: '70' }
-	];
+	import { skills } from '../assets/data.js';
 </script>
 
 <div class="sidenav">
