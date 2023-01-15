@@ -105,10 +105,11 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		background-color: coral;
-		max-height: 25%;
+		max-height: 30%;
 		overflow: scroll;
 		overflow-x: hidden;
 		width: 100%;
+		margin-top: 10%;
 	}
 
 	.skill-items {
