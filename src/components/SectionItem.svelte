@@ -5,15 +5,11 @@
 
 <div id="item">
 	<div id="title">
-		<strong>{title}</strong>
+		{#if title !== ""}<strong>{title} | {timeline}</strong>{/if}
 	</div>
 
-	<div id="timeline">
-        <strong>{timeline}</strong>
-    </div>
-
     <div id="content">
-        {content}
+        {@html content}
     </div>
 </div>
 
@@ -21,6 +17,8 @@
     #item {
         font-size: 1vw;
         color: black;
+        margin-top: 4%;
+        margin-bottom: 4%;
     }
 
     #title {
