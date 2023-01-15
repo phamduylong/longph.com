@@ -1,3 +1,14 @@
+const linkedin_img_url = new URL('../assets/linkedin.svg', import.meta.url).href;
+const discord_img_url = new URL('../assets/discord.svg', import.meta.url).href;
+const hackerrank_img_url = new URL('../assets/hackerrank.svg', import.meta.url).href;
+const leetcode_img_url = new URL('../assets/leetcode.svg', import.meta.url).href;
+const stackoverflow_img_url = new URL('../assets/stackoverflow.svg', import.meta.url).href;
+const email_img_url = new URL('../assets/email.svg', import.meta.url).href;
+const github_img_url = new URL('../assets/github.svg', import.meta.url).href;
+const phone_img_url = new URL('../assets/phone.svg', import.meta.url).href;
+const whatsapp_img_url = new URL('../assets/whatsapp.svg', import.meta.url).href;
+
+
 const section_datas = [
 
     {
@@ -99,4 +110,20 @@ const skills = [
     { skill: 'Git', progress: '70' }
 ];
 
-export { section_datas as section_datas, skills as skills };
+
+const contact = [
+    {img: email_img_url, content: "longph@metropolia.fi", url: "mailto:longph@metropolia.fi"},
+    {img: email_img_url, content: "longphamduy2002@gmail.com", url: "mailto:longphamduy2002@gmail.com"},
+    {img: discord_img_url, content: "PhDLong#0475", url: "https://discordapp.com/users/747107129625804870"},
+    {img: github_img_url, content: "phamduylong", url: "https://github.com/phamduylong"},
+    {img: hackerrank_img_url, content: "phdlong", url: "https://www.hackerrank.com/phdlong"},
+    {img: leetcode_img_url, content: "longphd", url: "https://leetcode.com/longphd/"},
+    {img: linkedin_img_url, content: "duy-long-pham", url: "https://www.linkedin.com/in/duy-long-pham/"},
+    {img: stackoverflow_img_url, content: "pham-long", url: "https://stackoverflow.com/users/14126819/pham-long"},
+    {img: phone_img_url, content: "+35846-888-5062", url:"tel:+358468885062"},
+    {img: phone_img_url, content: "+8491-323-0502", url:"tel:+84913230502"},
+    {img: whatsapp_img_url, content: "+35846-888-5062", url:"https://wa.link/lmfxj0"},
+];
+
+
+export { section_datas as section_datas, skills as skills, contact as contact };
