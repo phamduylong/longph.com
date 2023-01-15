@@ -2,10 +2,8 @@
     import SideTab from "../components/SideTab.svelte";
     import MainPage from "../components/MainPage.svelte";
 </script>
-<div>
-    <SideTab />
-</div>
-<div><MainPage/></div>
+<SideTab />
+<MainPage/>
 <style>
 
 </style>

@@ -60,7 +60,6 @@
 		margin-right: 0.25%;
 	}
 
-
 	#skills_section_header {
 		position: absolute;
 		top: 35%;
@@ -109,6 +108,23 @@
 		overflow-x: hidden;
 	}
 
+	@media screen and (orientation: portrait) {
+		.sidenav {
+		border-left: 0.05vw black solid;
+		border-right: 0.05vw black solid;
+		height: 100%;
+		width: 30%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		overflow-x: hidden;
+		background-color: coral;
+		margin-left: 0.25%;
+		margin-right: 0.25%;
+	}
+	}
 
 
 </style>
