@@ -87,7 +87,7 @@
 
 	#contact_section_header {
 		position: absolute;
-		top: 80%;
+		top: 75%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 2vw;
@@ -104,7 +104,7 @@
 		flex-wrap: wrap;
 		width: 100%;
 		margin-top: 10%;
-		max-height: 12.5%;
+		max-height: 15%;
 		overflow: scroll;
 		overflow-x: hidden;
 	}
