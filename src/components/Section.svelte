@@ -5,14 +5,14 @@
 </script>
 
 <div id="title">
-    {title}
+    {title.toUpperCase()}
     <SectionItem title="METROPOLIA UNIVERSITY OF APPLIED SCIENCES" timeline="2020-2024 (Estimated)" content="Major in Embedded Systems Programming
     "/>
 </div>
 
 <style>
     #title {
-        color: #00802b;
+        color: #338566;
         font-size: 3vw;
         margin: 10%;
     }
