@@ -50,7 +50,8 @@ const section_datas = [
                 timeline: "2023", 
                 content: `My first project with Svelte! All of us have had that "To Do List" project when we first started with front-end development right? I personally don't use 
                 ToDo lists so I thought a Shopping List would be a bit more beneficial. This project was for me to learn the basics front-end concepts: props, modules, libraries, 
-                deploying and much more than that.<br/>
+                deploying and much more than that.<br/><br/>
+                Tech Stack: Svelte, SvelteKit, HTML, CSS<br/><br/>
                 <a href="https://shopping-list-e3c6g2ttu-phamduylong.vercel.app/" style="color: blue;">Demo App</a><br/>
                 <a href="https://github.com/phamduylong/ShoppingList" style="color: blue;">GitHub repository</a>`
             },
@@ -63,7 +64,9 @@ const section_datas = [
                 will be measured with Sensirion's SDP600 differential pressure sensor. The idea of the system is to measure surrounding environments attributes, 
                 specifically CO2 level, relative humidity and temperature, then using the collected information as a feedback for the ventilation fan 
                 to adjust power level so as to create the ideal state in terms of air conditions. I contributed to building the back-end server for the project,
-                where we takes data from the physical devices through MQTT, visualize it with Chart.js and creating a User Interface so as to interact with the devices remotely.<br/>
+                where we takes data from the physical devices through MQTT, visualize it with Chart.js and creating a User Interface so as to interact with the devices remotely. 
+                One other task that I took on this project was to write automation test cases with Robot Framework and Selenium.<br/><br/>
+                Tech Stack: C, C++, NodeJs, Express, EJS, CSS, MongoDB, Chart.js<br/><br/>
                 <a href="https://github.com/phamduylong/abb-ventilation-controller" style="color: blue;">GitHub repository</a>`
             },
 
@@ -72,9 +75,19 @@ const section_datas = [
                 timeline: "2022", 
                 content: `An IoT Device to play legendary ring tones. This project is about digital audio, whereas an RTTTL string will be sent by the website 
                 using voice recognition to the Raspberry Pico through MQTT, or chosen from the LCD interface and the string will be parsed into playable audio 
-                and played through the piezo-buzzer. My role in this project was to mainly work with the Raspberry Pi Pico W using MicroPython.<br/>
+                and played through the piezo-buzzer. My role in this project was to mainly work with the Raspberry Pi Pico W using MicroPython.<br/><br/>
+                Tech Stack: Python, NodeJs, Express, EJS, CSS, MongoDB<br/><br/>
                 <a href="https://www.youtube.com/watch?v=tQpu81TbtpA" style="color: blue;">Demo Video</a><br/>
                  <a href="https://github.com/IoT-project-groups-1-2/g2-voice-controller" style="color: blue;">GitHub repository</a>`
+            },
+
+            {
+                title: "LCD Timer",
+                timeline: "2022",
+                content: `A hobby project made in the summer break 🙂 It is a timer device with an LCD display. User chooses an amount of time, 
+                the system buzzes after the timer is up with a piezo buzzer.<br/><br/>
+                Tech Stack: C++<br/><br/>
+                <a href="https://github.com/phamduylong/LCD-Timer" style="color: blue;">GitHub repository</a>`
             },
 
             {
@@ -82,10 +95,22 @@ const section_datas = [
                 timeline: "2020", 
                 content: `A Discord bot to fetch quotes and jokes through an API and send it to Discord server chatboxes. Quotes are fetch from 
                 <a href="https://zenquotes.io" style="color: blue;">here</a> and jokes are acquired from PyJokes. The chatbot was previously hosted on Heroku 
-                but has gone offline frequently when Heroku dropped their free plans 😥<br/>
+                but has gone offline frequently when Heroku dropped their free plans 😥<br/><br/>
+                Tech Stack: Python, discord.py<br/><br/>
                 <a href="https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot" style="color: blue;">Invite bot</a><br/>
                 <a href="https://github.com/phamduylong/CuteBot" style="color: blue;">GitHub repository</a>`
             },
+
+            {
+                title: "Rock Paper Scissors",
+                timeline: "2020",
+                content: `The application was based on Dev Ed's Rock Paper Scissors Game tutorial as a part of JavaScript course at Metropolia UAS (Helsinki, Finland). 
+                The application is pretty straight-forward, and easy to use. Click Let's Play to begin playing, and Play Again to reset results to 0-0. 
+                On each play, click on the option you want to choose (either Rock, Paper or Scissors), and wait for the result.<br/><br/>
+                Tech Stack: HTML, CSS, JavaScript<br/><br/>
+                <a href="https://phamduylong.github.io/rockpaperscissors/" style="color: blue;">Demo App</a><br/>
+                <a href="https://github.com/phamduylong/rockpaperscissors" style="color: blue;">GitHub repository</a>`
+            }
 
         ]
     }
@@ -103,6 +128,7 @@ const skills = [
     { skill: 'Embedded Programming', progress: '50' },
     { skill: 'C', progress: '60' },
     { skill: 'C++', progress: '70' },
+    { skill: 'Arduino', progress: '60'},
     { skill: 'Python', progress: '60' },
     { skill: 'Robot Framework', progress: '50' },
     { skill: 'Jenkins', progress: '40' },
