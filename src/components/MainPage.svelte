@@ -1,4 +1,5 @@
 <script>
+	import Section from "./Section.svelte";
 </script>
 
 <div id="main">
@@ -7,6 +8,12 @@
 		<div id="name">Long Pham</div>
 		<div id="title">Junior Developer</div>
 	</div> 
+
+	<div id="sections">
+		<Section title="Education" id="education_section"/>
+		<Section title="Projects" id="projects_section" />
+	</div>
+	
 	
 </div>
 
@@ -41,5 +48,14 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 2vw;
+	}
+
+	#sections {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 60%;
+		width: 60%;
 	}
 </style>
