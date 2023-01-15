@@ -1,5 +1,4 @@
 <script>
-    import Header from "../components/Header.svelte";
     import SideTab from "../components/SideTab.svelte";
     import MainPage from "../components/MainPage.svelte";
 </script>
