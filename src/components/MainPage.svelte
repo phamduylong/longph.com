@@ -1,24 +1,38 @@
 <script>
 	import Section from "./Section.svelte";
+	const section_datas = [
+		{
+			title: "Education", 
+			entries: [
+				{title: "Metropolia University Of Applied Sciences", timeline: "August 2020 - July 2024 (estimated)", content: "Majority of people are stupid"}
+			]
+		}, 
+
+		{
+			title: "Projects", 
+			entries: [
+				{title: "ABB Ventilation Project", timeline: "2022", content: "An IoT Project controlled by LPC1549 board with LCD & Web Interface"},
+				{title: "Ring Tone Text Transfer Language Player", timeline: "2022", content: "An IoT Device to play classic Nokia ringtones"},
+				{title: "CuteBot", timeline: "2020", content: "A Discord bot to fetch quotes and jokes through an API and send it to Discord server chatboxes"},
+			]
+		}
+	];
 </script>
 
 <div id="main">
-	
 	<div id="intro">
 		<div id="name">Long Pham</div>
 		<div id="title">Junior Developer</div>
-	</div> 
+	</div>
 
 	<div id="sections">
-		<Section title="Education" id="education_section"/>
-		<Section title="Projects" id="projects_section" />
+		{#each section_datas as section}
+			<Section section_data={section} />
+		{/each}
 	</div>
-	
-	
 </div>
 
 <style>
-
 	#main {
 		margin-left: 25%;
 		margin-right: 5%;
