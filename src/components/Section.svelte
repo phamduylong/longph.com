@@ -1,25 +1,39 @@
 <script>
 	import SectionItem from "./SectionItem.svelte";
-
+    import YouTube from 'svelte-youtube';
     export let section_data;
+
 </script>
 
 <div id="title">
     {section_data.title.toUpperCase()}
-    {#each section_data.entries as item, index}
+    {#each section_data.entries as item}
         <SectionItem title={item.title} timeline={item.timeline} content={item.content}>
-            {#if item.stack !== undefined}
-            <div class="stack-container">
-                Tech Stack:
-                {#each item.stack as tech}
-                    <img src={tech} alt={tech} class="tech-item"/>
-                {/each}
-            </div>
-                
+            {#if item.stack !== undefined && item.stack !== []}
+                <div class="stack-container">
+                    <b>Tech Stack:</b><br/>
+                    {#each item.stack as tech}
+                        <img src={tech} alt={tech} class="tech-item"/>
+                    {/each}
+                </div>
             {/if}
             
-            {#if item.links !== undefined}
-            <br/><br/>
+
+            {#if item.media !== undefined && item.media !== []}
+                <br/><br/>
+                {#each item.media as media}
+                    {#if media.type === "youtube"}
+                        <b>{media.caption}</b><br/><br/>
+                        <div class="media-wrapper">
+                            <YouTube videoId={media.ytid} />
+                        </div>
+                       
+                    {/if}
+                {/each}
+            {/if}
+            
+            {#if item.links !== undefined && item.links !== []}
+                <br/><br/>
                 {#each item.links as hl}
                     <a href="{hl.href}" target="blank">{hl.text}</a><br/>
                 {/each}
@@ -49,6 +63,7 @@
         height: 5%;
         width: 5%;
         margin-left: 1%;
+        margin-top: 2%;
     }
 
     
@@ -56,5 +71,11 @@
         transform: scale(1.5);
         margin-left: 2%;
         margin-right: 2%;
+    }
+
+    .media-wrapper {
+        position: relative;
+        left: 25%;
+        border-radius: 2px black solid;
     }
 </style>
