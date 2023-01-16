@@ -73,4 +73,9 @@
         margin-right: 2%;
     }
 
+    .media-wrapper {
+        position: relative;
+        left: 25%;
+        border-radius: 2px black solid;
+    }
 </style>
