@@ -36,9 +36,9 @@
                         <DeviceDetector showInDevice="mobile">
                             <a href={"https://www.youtube.com/watch?v=" + media.ytid}>{media.caption}</a>
                         </DeviceDetector>           
-                                       
+
                         <DeviceDetector showInDevice="desktop">
-                            <b>{media.caption}</b><br/><br/>
+                            <b>{media.caption}:</b><br/><br/>
                             <div class="media-wrapper">
                                 <YouTube videoId={media.ytid} />
                             </div>

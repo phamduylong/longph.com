@@ -100,7 +100,7 @@ const section_datas = [
                     {href: "https://github.com/IoT-project-groups-1-2/g2-voice-controller", text: "GitHub repository"}
                 ],
                 media: [
-                    {ytid: "tQpu81TbtpA", type: "youtube", caption: "Demo Video:"}
+                    {ytid: "tQpu81TbtpA", type: "youtube", caption: "Demo Video"}
                 ]
             },
 
@@ -114,7 +114,7 @@ const section_datas = [
                     {href: "https://github.com/phamduylong/LCD-Timer", text: "GitHub repository"}
                 ],
                 media: [
-                    {ytid: "F7Y3UJ-fWd0", type: "youtube", caption: "Demo Video:"}
+                    {ytid: "F7Y3UJ-fWd0", type: "youtube", caption: "Demo Video"}
                 ]
             },
 
