@@ -5,8 +5,8 @@
     import Device from "svelte-device-info";
     export let section_data;
     const mobile_options = {
-    height: '195',
-    width: '320',
+    height: '98',
+    width: '160',
     //  see https://developers.google.com/youtube/player_parameters
     playerVars: {
       autoplay: 1
@@ -36,10 +36,8 @@
                         <b>{media.caption}</b><br/><br/>
                         <div class="media-wrapper">
                             <DeviceDetector showInDevice="mobile"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
-                            <DeviceDetector showInDevice="desktop"><YouTube videoId={media.ytid} /></DeviceDetector>
-                      
+                            <DeviceDetector showInDevice="desktop"><YouTube videoId={media.ytid} /></DeviceDetector>                 
                         </div>
-                       
                     {/if}
                 {/each}
             {/if}
