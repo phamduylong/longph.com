@@ -35,7 +35,7 @@
                         <b>{media.caption}</b><br/><br/>
                         <div class="media-wrapper">
                             <DeviceDetector shoowInDevice="desktop"><YouTube videoId={media.ytid}/></DeviceDetector>
-                            <DeviceDetector shoowInDevice="desktop"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
+                            <DeviceDetector shoowInDevice="mobile"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
                         </div>
                        
                     {/if}
