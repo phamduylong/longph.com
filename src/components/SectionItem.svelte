@@ -1,7 +1,6 @@
 <script>
 	export let title = '',
 		timeline = '2023', content = '';
-    import Youtube from "svelte-youtube-embed";
 </script>
 
 <div id="item">
