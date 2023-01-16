@@ -82,8 +82,7 @@
     @media screen and (orientation: portrait) {
         .media-wrapper {
             position: relative;
-            left: 25%;
-            border-radius: 2px black solid;
+            left: 50%;
             max-height: 25%;
             max-width: 25%;
         }
