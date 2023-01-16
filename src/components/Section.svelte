@@ -50,4 +50,11 @@
         width: 5%;
         margin-left: 1%;
     }
+
+    
+    .tech-item:hover {
+        transform: scale(1.5);
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 </style>
