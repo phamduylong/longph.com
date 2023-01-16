@@ -5,8 +5,8 @@
     import Device from "svelte-device-info";
     export let section_data;
     const mobile_options = {
-    height: '98',
-    width: '160',
+    height: '120',
+    width: '200',
     //  see https://developers.google.com/youtube/player_parameters
     playerVars: {
       autoplay: 1
