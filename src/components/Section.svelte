@@ -2,17 +2,7 @@
 	import SectionItem from "./SectionItem.svelte";
     import YouTube from 'svelte-youtube';
     import DeviceDetector from "svelte-device-detector";
-    import Device from "svelte-device-info";
     export let section_data;
-    const mobile_options = {
-    height: '120',
-    width: '200',
-    //  see https://developers.google.com/youtube/player_parameters
-    playerVars: {
-      autoplay: 1
-    }
-  };
-
 </script>
 
 <div id="title">
@@ -81,7 +71,6 @@
         margin-top: 2%;
     }
 
-    
     .tech-item:hover {
         transform: scale(1.5);
         margin-left: 2%;
