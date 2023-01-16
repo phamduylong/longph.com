@@ -2,6 +2,7 @@
 	import SectionItem from "./SectionItem.svelte";
     import YouTube from 'svelte-youtube';
     import DeviceDetector from "svelte-device-detector";
+    import Device from "svelte-device-info";
     export let section_data;
     const mobile_options = {
     height: '195',
@@ -34,8 +35,9 @@
                     {#if media.type === "youtube"}
                         <b>{media.caption}</b><br/><br/>
                         <div class="media-wrapper">
-                            <DeviceDetector shoowInDevice="desktop"><YouTube videoId={media.ytid}/></DeviceDetector>
-                            <DeviceDetector shoowInDevice="mobile"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
+                            {#if Device.isPhone || Device.isTablet}<YouTube videoId={media.ytid} options={mobile_options}/>
+                            {:else} <YouTube videoId={media.ytid}/>
+                            {/if}
                         </div>
                        
                     {/if}
