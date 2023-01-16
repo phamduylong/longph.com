@@ -1,7 +1,16 @@
 <script>
 	import SectionItem from "./SectionItem.svelte";
     import YouTube from 'svelte-youtube';
+    import DeviceDetector from "svelte-device-detector";
     export let section_data;
+    const mobile_options = {
+    height: '195',
+    width: '50%',
+    //  see https://developers.google.com/youtube/player_parameters
+    playerVars: {
+      autoplay: 1
+    }
+  };
 
 </script>
 
@@ -25,7 +34,8 @@
                     {#if media.type === "youtube"}
                         <b>{media.caption}</b><br/><br/>
                         <div class="media-wrapper">
-                            <YouTube videoId={media.ytid} />
+                            <DeviceDetector shoowInDevice="desktop"><YouTube videoId={media.ytid}/></DeviceDetector>
+                            <DeviceDetector shoowInDevice="desktop"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
                         </div>
                        
                     {/if}
