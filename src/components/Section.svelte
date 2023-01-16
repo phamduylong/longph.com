@@ -77,14 +77,15 @@
         position: relative;
         left: 25%;
         border-radius: 2px black solid;
-        max-height: 50%;
-        max-width: 50%;
     }
 
     @media screen and (orientation: portrait) {
         .media-wrapper {
-            max-height: 50%;
-            max-width: 50%;
+            position: relative;
+            left: 25%;
+            border-radius: 2px black solid;
+            max-height: 25%;
+            max-width: 25%;
         }
 	}
 	
