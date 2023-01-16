@@ -98,6 +98,9 @@ const section_datas = [
                 stack: [python_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url],
                 links: [
                     {href: "https://github.com/IoT-project-groups-1-2/g2-voice-controller", text: "GitHub repository"}
+                ],
+                media: [
+                    {ytid: "tQpu81TbtpA", type: "youtube", caption: "Demo Video:"}
                 ]
             },
 
@@ -109,6 +112,9 @@ const section_datas = [
                 stack: [cpp_img_url, arduino_img_url],
                 links: [
                     {href: "https://github.com/phamduylong/LCD-Timer", text: "GitHub repository"}
+                ],
+                media: [
+                    {ytid: "F7Y3UJ-fWd0", type: "youtube", caption: "Demo Video:"}
                 ]
             },
 
