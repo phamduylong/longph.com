@@ -1,4 +1,4 @@
-<script>
+<script >
 	import SectionItem from "./SectionItem.svelte";
     import YouTube from 'svelte-youtube';
     import DeviceDetector from "svelte-device-detector";
@@ -35,9 +35,9 @@
                     {#if media.type === "youtube"}
                         <b>{media.caption}</b><br/><br/>
                         <div class="media-wrapper">
-                            {#if Device.isPhone || Device.isTablet}<YouTube videoId={media.ytid} options={mobile_options}/>
-                            {:else} <YouTube videoId={media.ytid}/>
-                            {/if}
+                            <DeviceDetector showInDevice="mobile"><YouTube videoId={media.ytid} options={mobile_options}/></DeviceDetector>
+                            <DeviceDetector showInDevice="desktop"><YouTube videoId={media.ytid} /></DeviceDetector>
+                      
                         </div>
                        
                     {/if}
