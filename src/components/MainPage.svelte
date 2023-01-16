@@ -65,7 +65,7 @@
 			top: 25%;
 			left: 50%;
 			width: 50%;
-			transform: translate(-10%, -50%);
+			transform: translate(-15%, -50%);
 			border-top: black 5px solid;
 			height: 20%;
 		}
