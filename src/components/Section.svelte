@@ -6,7 +6,7 @@
     export let section_data;
     const mobile_options = {
     height: '195',
-    width: '50%',
+    width: '320',
     //  see https://developers.google.com/youtube/player_parameters
     playerVars: {
       autoplay: 1
@@ -91,13 +91,5 @@
         border-radius: 2px black solid;
     }
 
-    @media screen and (orientation: portrait) {
-        .media-wrapper {
-            position: relative;
-            left: 50%;
-            max-height: 25%;
-            max-width: 25%;
-        }
-	}
 	
 </style>
