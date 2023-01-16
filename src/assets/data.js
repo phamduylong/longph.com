@@ -66,14 +66,11 @@ const section_datas = [
                 content: `My first project with Svelte! All of us have had that "To Do List" project when we first started with front-end development right? I personally don't use 
                 ToDo lists so I thought a Shopping List would be a bit more beneficial. This project was for me to learn the basics front-end concepts: props, modules, libraries, 
                 deploying and much more than that.<br/><br/>`,
-                stack: [svelte_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
                 links: [
                     {href: "https://shopping-list-phamduylong.vercel.app/", text: "Demo App"},
                     {href: "https://github.com/phamduylong/ShoppingList", text: "GitHub repository"}
                 ]
-                /*Tech Stack: Svelte, SvelteKit, HTML, CSS<br/><br/>
-                <a href="https://shopping-list-e3c6g2ttu-phamduylong.vercel.app/" style="color: blue;">Demo App</a><br/>
-                <a href="https://github.com/phamduylong/ShoppingList" style="color: blue;">GitHub repository</a>`*/
             },
 
             {
@@ -89,10 +86,7 @@ const section_datas = [
                 stack: [c_img_url, cpp_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url, chartjs_img_url, robotframework_img_url],
                 links: [
                     {href: "https://github.com/phamduylong/abb-ventilation-controller", text: "GitHub repository"}
-                ]
-                /*
-                Tech Stack: C, C++, NodeJs, Express, EJS, CSS, MongoDB, Chart.js<br/><br/>
-                <a href="https://github.com/phamduylong/abb-ventilation-controller" style="color: blue;">GitHub repository</a>`*/
+                ]            
             },
 
             {
@@ -101,13 +95,10 @@ const section_datas = [
                 content: `An IoT Device to play legendary ring tones. This project is about digital audio, whereas an RTTTL string will be sent by the website 
                 using voice recognition to the Raspberry Pico through MQTT, or chosen from the LCD interface and the string will be parsed into playable audio 
                 and played through the piezo-buzzer. My role in this project was to mainly work with the Raspberry Pi Pico W using MicroPython.<br/><br/>`,
-                stack: [python_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url, chartjs_img_url],
+                stack: [python_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url],
                 links: [
                     {href: "https://github.com/IoT-project-groups-1-2/g2-voice-controller", text: "GitHub repository"}
                 ]
-                /*
-                <a href="https://www.youtube.com/watch?v=tQpu81TbtpA" style="color: blue;">Demo Video</a><br/>
-                 <a href="https://github.com/IoT-project-groups-1-2/g2-voice-controller" style="color: blue;">GitHub repository</a>`*/
             },
 
             {
@@ -119,7 +110,6 @@ const section_datas = [
                 links: [
                     {href: "https://github.com/phamduylong/LCD-Timer", text: "GitHub repository"}
                 ]
-                /*<a href="https://github.com/phamduylong/LCD-Timer" style="color: blue;">GitHub repository</a>`*/
             },
 
             {
@@ -130,12 +120,9 @@ const section_datas = [
                 but has gone offline frequently when Heroku dropped their free plans 😥<br/><br/>`,
                 stack: [python_img_url],
                 links: [
-                    {href: "https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot", text: "Invite Bot"},
+                    {href: "https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot", text: "Invite the bot"},
                     {href: "https://github.com/phamduylong/CuteBot", text: "GitHub repository"}
                 ]
-                /*
-                <a href="https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot" style="color: blue;">Invite bot</a><br/>
-                <a href="https://github.com/phamduylong/CuteBot" style="color: blue;">GitHub repository</a>`*/
             },
 
             {
@@ -149,9 +136,6 @@ const section_datas = [
                     {href: "https://phamduylong.github.io/rockpaperscissors/", text: "Demo App"},
                     {href: "https://github.com/phamduylong/rockpaperscissors", text: "GitHub repository"}
                 ]
-                /*
-                <a href="https://phamduylong.github.io/rockpaperscissors/" style="color: blue;">Demo App</a><br/>
-                <a href="https://github.com/phamduylong/rockpaperscissors" style="color: blue;">GitHub repository</a>`*/
             }
 
         ]
