@@ -61,6 +61,18 @@ const section_datas = [
         entries: [
 
             {
+                title: "Personal Webpage",
+                timeline: "2023",
+                content: `This website! Live demo right here you're reading. I made it with the help of Svelte and SvelteKit, as well as some external UI packages. Most of the features
+                can be viewed on a mobile device but the YouTube player would be removed due to scaling issues of the video player tools. It is hosted by Vercel 
+                at the time of this writing 🙂<br/><br/>`,
+                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                links: [
+                    {href: "https://github.com/phamduylong/CV", text: "GitHub repository"}
+                ]
+            },
+
+            {
                 title: "Shopping List", 
                 timeline: "2023", 
                 content: `My first project with Svelte! All of us have had that "To Do List" project when we first started with front-end development right? I personally don't use 
@@ -115,6 +127,18 @@ const section_datas = [
                 ],
                 media: [
                     {ytid: "F7Y3UJ-fWd0", type: "youtube", caption: "Demo Video"}
+                ]
+            },
+
+            {
+                title: "Football Record Book",
+                timeline: "2021",
+                content: `A console application written in C++ (Cpp11 or higher). The application will store football match records in a text-based database file, 
+                whose content can be seen on the console by choosing some specific commands on the menu.<br/><br/>`,
+                stack: [cpp_img_url],
+                links: [
+                    {href: "https://replit.com/@PhamLong1/FootballRecord?v=1", text: "Repl"},
+                    {href: "https://github.com/phamduylong/FootballRecord", text: "GitHub repository"}
                 ]
             },
 
