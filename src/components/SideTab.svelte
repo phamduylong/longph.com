@@ -82,6 +82,10 @@
 		overflow-x: hidden;
 		width: 100%;
 		margin-top: 10%;
+		padding: 1%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		box-shadow: 2px 2px;
 	}
 
 	#contact_section_header {
@@ -106,6 +110,10 @@
 		max-height: 15%;
 		overflow: scroll;
 		overflow-x: hidden;
+		padding: 1%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		box-shadow: 2px 2px;
 	}
 
 	@media screen and (orientation: portrait) {
