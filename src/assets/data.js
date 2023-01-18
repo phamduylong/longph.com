@@ -189,6 +189,7 @@ const skills = [
     { skill: 'Robot Framework', progress: '50' },
     { skill: 'Jenkins', progress: '40' },
     { skill: 'Linux', progress: '50' },
+    { skill: 'Bash', progress: '50' },
     { skill: 'Git', progress: '70' }
 ];
 
