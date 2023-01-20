@@ -61,6 +61,17 @@ const section_datas = [
         entries: [
 
             {
+                title: "Random Netflix Series Quotes Generator",
+                timeline: "2023",
+                content: "A website to generate random quotes from Netflix series. Currently supporting Better Call Saul, Lucifer and Stranger Things.<br/><br/>",
+                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                links: [
+                    {href: "https://random-netflix-quotes.vercel.app/", text: "Demo App"},
+                    {href: "https://github.com/phamduylong/RandomNetflixQuotes", text: "GitHub repository"}
+                ]
+            },
+
+            {
                 title: "Personal Webpage",
                 timeline: "2023",
                 content: `This website! Live demo right here you're reading. I made it with the help of Svelte and SvelteKit, as well as some external UI packages. Most of the features
