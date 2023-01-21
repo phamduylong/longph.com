@@ -13,7 +13,7 @@
                 <div class="stack-container">
                     <b>Tech Stack:</b><br/>
                     {#each item.stack as tech}
-                        <img src={tech} alt={tech} class="tech-item"/>
+                        <a href={tech.url} target="_blank" rel="noreferrer"><img src={tech.img} alt={tech} class="tech-item"/></a>
                     {/each}
                 </div>
             {/if}
