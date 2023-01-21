@@ -1,6 +1,6 @@
 <script>
 	import Section from "./Section.svelte";
-	import { section_datas } from '../assets/data.js';
+	import { section_datas } from './assets/data.js';
 </script>
 
 <div id="main">
