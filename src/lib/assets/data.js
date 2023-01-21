@@ -158,7 +158,7 @@ const section_datas = [
                 title: "CuteBot", 
                 timeline: "2020", 
                 content: `A Discord bot to fetch quotes and jokes through an API and send it to Discord server chatboxes. Quotes are fetch from 
-                <a href="https://zenquotes.io" style="color: blue;">here</a> and jokes are acquired from PyJokes. The chatbot was previously hosted on Heroku 
+                <a href="https://zenquotes.io" style="color: blue;">ZenQuotes API</a> and jokes are acquired from PyJokes. The chatbot was previously hosted on Heroku 
                 but has gone offline frequently when Heroku dropped their free plans 😥<br/><br/>`,
                 stack: [python_img_url],
                 links: [
