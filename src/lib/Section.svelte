@@ -40,7 +40,7 @@
             {#if item.links !== undefined && item.links !== []}
                 <br/><br/>
                 {#each item.links as hl}
-                    <a href="{hl.href}" target="blank">{hl.text}</a><br/>
+                    <a href={hl.href} target="blank">{hl.text}</a><br/>
                 {/each}
             {/if}
 
