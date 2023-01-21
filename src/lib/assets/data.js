@@ -24,6 +24,22 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
 
+const arduino = {img: arduino_img_url, url: "https://www.arduino.cc/"};
+const c = {img: c_img_url, url: "https://en.cppreference.com/w/c"};
+const chartjs = {img: chartjs_img_url, url: "https://www.chartjs.org/"};
+const cpp = {img: cpp_img_url, url: "https://en.cppreference.com/w/"};
+const css3 = {img: css3_img_url, url: "https://developer.mozilla.org/en-US/docs/Web/CSS"};
+const ejs = {img: ejs_img_url, url: "https://ejs.co/"};
+const express = {img: express_img_url, url: "https://expressjs.com/"};
+const html5 = {img: html5_img_url, url: "https://developer.mozilla.org/en-US/docs/Web/HTML"};
+const javascript = {img: javascript_img_url, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"};
+const mongodb = {img: mongodb_img_url, url: "https://www.mongodb.com/"};
+const nodejs = {img: nodejs_img_url, url: "https://nodejs.org/en/"};
+const python = {img: python_img_url, url: "https://www.python.org/"};
+const robotframework = {img: robotframework_img_url, url: "https://robotframework.org/"};
+const svelte = {img: svelte_img_url, url: "https://svelte.dev/"};
+const sveltekit = {img: sveltekit_img_url, url: "https://kit.svelte.dev/"};
+
 
 const section_datas = [
 
@@ -65,7 +81,7 @@ const section_datas = [
                 title: "Random Netflix Series Quotes Generator",
                 timeline: "2023",
                 content: "A website to generate random quotes from Netflix series. Currently supporting Better Call Saul, Lucifer and Stranger Things.<br/><br/>",
-                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                stack: [svelte, sveltekit, html5, css3, javascript],
                 links: [
                     {href: "https://random-netflix-quotes.vercel.app/", text: "Demo App"},
                     {href: "https://github.com/phamduylong/RandomNetflixQuotes", text: "GitHub repository"}
@@ -78,7 +94,7 @@ const section_datas = [
                 content: `This website! Live demo right here you're reading. I made it with the help of Svelte and SvelteKit, as well as some external UI packages. Most of the features
                 can be viewed on a mobile device but the YouTube player would be removed due to scaling issues of the video player tools. It is hosted by Vercel 
                 at the time of this writing 🙂<br/><br/>`,
-                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                stack: [svelte, sveltekit, html5, css3, javascript],
                 links: [
                     {href: "https://github.com/phamduylong/CV", text: "GitHub repository"}
                 ]
@@ -90,7 +106,7 @@ const section_datas = [
                 content: `My first project with Svelte! All of us have had that "To Do List" project when we first started with front-end development right? I personally don't use 
                 ToDo lists so I thought a Shopping List would be a bit more beneficial. This project was for me to learn the basics front-end concepts: props, modules, libraries, 
                 deploying and much more than that.<br/><br/>`,
-                stack: [svelte_img_url, sveltekit_img_url, html5_img_url, css3_img_url, javascript_img_url],
+                stack: [svelte, sveltekit, html5, css3, javascript],
                 links: [
                     {href: "https://shopping-list-phamduylong.vercel.app/", text: "Demo App"},
                     {href: "https://github.com/phamduylong/ShoppingList", text: "GitHub repository"}
@@ -107,7 +123,7 @@ const section_datas = [
                 to adjust power level so as to create the ideal state in terms of air conditions. I contributed to building the back-end server for the project,
                 where we takes data from the physical devices through MQTT, visualize it with Chart.js and creating a User Interface so as to interact with the devices remotely. 
                 One other task that I took on this project was to write automation test cases with Robot Framework and Selenium.<br/><br/>`,
-                stack: [c_img_url, cpp_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url, chartjs_img_url, robotframework_img_url],
+                stack: [c, cpp, nodejs, express, ejs, css3, mongodb, chartjs, robotframework],
                 links: [
                     {href: "https://github.com/phamduylong/abb-ventilation-controller", text: "GitHub repository"}
                 ]            
@@ -119,7 +135,7 @@ const section_datas = [
                 content: `An IoT Device to play legendary ring tones. This project is about digital audio, whereas an RTTTL string will be sent by the website 
                 using voice recognition to the Raspberry Pico through MQTT, or chosen from the LCD interface and the string will be parsed into playable audio 
                 and played through the piezo-buzzer. My role in this project was to mainly work with the Raspberry Pi Pico W using MicroPython.<br/><br/>`,
-                stack: [python_img_url, nodejs_img_url, express_img_url, ejs_img_url, css3_img_url, mongodb_img_url],
+                stack: [python, nodejs, express, ejs, css3, mongodb],
                 links: [
                     {href: "https://github.com/IoT-project-groups-1-2/g2-voice-controller", text: "GitHub repository"}
                 ],
@@ -133,7 +149,7 @@ const section_datas = [
                 timeline: "2022",
                 content: `A hobby project made in the summer break 🙂 It is a timer device with an LCD display. User chooses an amount of time, 
                 the system buzzes after the timer is up with a piezo buzzer.<br/><br/>`,
-                stack: [cpp_img_url, arduino_img_url],
+                stack: [cpp, arduino],
                 links: [
                     {href: "https://github.com/phamduylong/LCD-Timer", text: "GitHub repository"}
                 ],
@@ -147,7 +163,7 @@ const section_datas = [
                 timeline: "2021",
                 content: `A console application written in C++ (Cpp11 or higher). The application will store football match records in a text-based database file, 
                 whose content can be seen on the console by choosing some specific commands on the menu.<br/><br/>`,
-                stack: [cpp_img_url],
+                stack: [cpp],
                 links: [
                     {href: "https://replit.com/@PhamLong1/FootballRecord?v=1", text: "Repl"},
                     {href: "https://github.com/phamduylong/FootballRecord", text: "GitHub repository"}
@@ -160,7 +176,7 @@ const section_datas = [
                 content: `A Discord bot to fetch quotes and jokes through an API and send it to Discord server chatboxes. Quotes are fetch from 
                 <a href="https://zenquotes.io" style="color: blue;">ZenQuotes API</a> and jokes are acquired from PyJokes. The chatbot was previously hosted on Heroku 
                 but has gone offline frequently when Heroku dropped their free plans 😥<br/><br/>`,
-                stack: [python_img_url],
+                stack: [python],
                 links: [
                     {href: "https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot", text: "Invite the bot"},
                     {href: "https://github.com/phamduylong/CuteBot", text: "GitHub repository"}
@@ -173,7 +189,7 @@ const section_datas = [
                 content: `The application was based on Dev Ed's Rock Paper Scissors Game tutorial as a part of JavaScript course at Metropolia UAS (Helsinki, Finland). 
                 The application is pretty straight-forward, and easy to use. Click Let's Play to begin playing, and Play Again to reset results to 0-0. 
                 On each play, click on the option you want to choose (either Rock, Paper or Scissors), and wait for the result.<br/><br/>`,
-                stack: [html5_img_url, css3_img_url, javascript_img_url],
+                stack: [html5, css3, javascript],
                 links: [
                     {href: "https://phamduylong.github.io/rockpaperscissors/", text: "Demo App"},
                     {href: "https://github.com/phamduylong/rockpaperscissors", text: "GitHub repository"}
@@ -205,7 +221,6 @@ const skills = [
     { skill: 'Git', progress: '70' }
 ];
 
-
 const contact = [
     {img: email_img_url, content: "longph@metropolia.fi", url: "mailto:longph@metropolia.fi"},
     {img: email_img_url, content: "longphamduy2002@gmail.com", url: "mailto:longphamduy2002@gmail.com"},
@@ -219,6 +234,7 @@ const contact = [
     {img: phone_img_url, content: "+8491-323-0502", url:"tel:+84913230502"},
     {img: whatsapp_img_url, content: "+35846-888-5062", url:"https://wa.link/lmfxj0"},
 ];
+
 
 
 export { section_datas as section_datas, skills as skills, contact as contact };
