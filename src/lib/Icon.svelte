@@ -1,5 +1,5 @@
 <script>
-	const img_url = new URL('../assets/pp.jpg', import.meta.url).href;
+	import img_url from "$lib/assets/pp.jpg";
 </script>
 
 <div id="icon_container"><img id="icon" src={img_url} alt="avatar" /></div>
