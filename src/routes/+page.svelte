@@ -1,4 +1,6 @@
 <script>
+	export let data;
+	console.log(data.server_data);
     import SideTab from "../lib/SideTab.svelte";
     import MainPage from "../lib/MainPage.svelte";
 </script>
