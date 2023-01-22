@@ -3,7 +3,7 @@ import { PEEKA_API_KEY } from "$env/static/private";
 export const trailingSlash = 'always';
 export async function load({ data, fetch }) {
     const preview_urls = [
-                            "https://random-netflix-quotes.vercel.app/", 
+                            "https://longph.com/", 
                             "https://shopping-list-phamduylong.vercel.app/",
                             "https://replit.com/@PhamLong1/FootballRecord?v=1",
                             "https://phamduylong.github.io/rockpaperscissors/"                        
