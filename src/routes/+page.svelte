@@ -11,6 +11,7 @@
 		type: 'website',
 		url: 'https://longph.com',
 		title: 'Long Pham\'s Personal Website',
+		description: 'Long Pham\'s personal website/portfolio written in Svelte and SvelteKit',
 		images: [
 			{
 				url: 'https://picsum.photos/400/300',
