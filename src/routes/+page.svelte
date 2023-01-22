@@ -13,7 +13,7 @@
 		title: 'Long Pham\'s Personal Website',
 		images: [
 			{
-				url: 'https://www.example.ie//og-image.jpg',
+				url: 'https://picsum.photos/400/300',
 				width: 400,
 				height: 300,
 				alt: ''
