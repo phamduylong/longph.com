@@ -3,7 +3,24 @@
 	console.log(data.server_data);
     import SideTab from "../lib/SideTab.svelte";
     import MainPage from "../lib/MainPage.svelte";
+	import { MetaTags } from 'svelte-meta-tags';
 </script>
+
+<MetaTags 
+	openGraph={{
+		type: 'website',
+		url: 'https://longph.com',
+		title: 'Long Pham\'s Personal Website',
+		images: [
+			{
+				url: 'https://www.example.ie//og-image.jpg',
+				width: 400,
+				height: 300,
+				alt: ''
+			}
+		]
+	}}
+/>
 <SideTab />
 <MainPage />
 
