@@ -3,15 +3,15 @@
 	console.log(data.server_data);
     import SideTab from "../lib/SideTab.svelte";
     import MainPage from "../lib/MainPage.svelte";
-	import { MetaTags } from 'svelte-meta-tags';
+	import SvelteSeo from 'svelte-seo';
 </script>
 
-<MetaTags 
+<SvelteSeo 
 	openGraph={{
-		type: 'website',
-		url: 'https://longph.com',
-		title: 'Long Pham\'s Personal Website',
-		description: 'Long Pham\'s personal website/portfolio written in Svelte and SvelteKit',
+		title: "Long Pham | Personal Page",
+		description: "Long Pham's Personal Page",
+		type: "website",
+		url: "https://longph.com",
 		images: [
 			{
 				url: 'https://picsum.photos/400/300',
@@ -20,6 +20,7 @@
 				alt: ''
 			}
 		]
+
 	}}
 />
 <SideTab />

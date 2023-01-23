@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"svelte-link-preview": "^0.3.3",
-		"svelte-meta-tags": "^2.6.5"
+		"svelte-meta-tags": "^2.6.5",
+		"svelte-seo": "^1.4.1"
 	}
 }

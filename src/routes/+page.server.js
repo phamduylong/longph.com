@@ -3,6 +3,7 @@ import { PEEKA_API_KEY } from "$env/static/private";
 export const trailingSlash = 'always';
 export async function load({ data, fetch }) {
     const preview_urls = [
+                            "https://shopping-list-pi-three.vercel.app",
                             "https://shopping-list-phamduylong.vercel.app/",
                             "https://replit.com/@PhamLong1/FootballRecord?v=1",
                             "https://phamduylong.github.io/rockpaperscissors/"                        
@@ -19,7 +20,6 @@ export async function load({ data, fetch }) {
             
 
         });
-        console.log("\n\n\n\n\nFETCH RES:", fetch_res);
         const res_json = await fetch_res.json();
         preview_response.push(res_json);
     }
