@@ -19,7 +19,7 @@ This is a personal CV-ish website I built with Svelte and SvelteKit, along with 
 ├── static
 ├── svelte.config.js
 ├── tailwind.config.cjs
-└── vite.config.js```
+└── vite.config.js
 ```
 ## Cloning
 ```bash
