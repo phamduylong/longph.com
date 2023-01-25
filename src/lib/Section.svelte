@@ -57,6 +57,13 @@
 		margin: 10%;
 	}
 
+	a {
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: #338566;
+	}
 
 
 	.media-wrapper {
