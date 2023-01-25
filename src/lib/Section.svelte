@@ -4,7 +4,10 @@
 	import DeviceDetector from 'svelte-device-detector';
     import SkillIcon from './TechIcon.svelte';
 	export let section_data;
-
+	const options = {
+		height: "470vh",
+		width: "100%"
+	}
 </script>
 
 <div id="title">
@@ -24,16 +27,10 @@
 				<br /><br />
 				{#each item.media as media}
 					{#if media.type === 'youtube'}
-						<DeviceDetector showInDevice="mobile">
-							<a href={'https://www.youtube.com/watch?v=' + media.ytid}>{media.caption}</a>
-						</DeviceDetector>
-
-						<DeviceDetector showInDevice="desktop">
-							<b>{media.caption}:</b><br /><br />
-							<div class="media-wrapper">
-								<YouTube videoId={media.ytid} />
-							</div>
-						</DeviceDetector>
+						<a href={"https://www.youtube.com/watch?v=" + media.ytid} target="_blank" rel="noreferrer">{media.caption}
+							<iframe src={"https://www.youtube.com/embed/" + media.ytid} title="Demo"/>
+						</a>
+						<br />
 					{/if}
 				{/each}
 			{/if}
@@ -41,7 +38,11 @@
 			{#if item.links !== undefined && item.links !== []}
 				<br /><br />
 				{#each item.links as hl}
-					<a href={hl.href} target="blank">{hl.text}</a><br />
+					{#if hl.type === "demo"}
+					<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}<iframe src={hl.href} title="Demo"/></a><br />
+					{:else}
+					<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}</a><br />
+					{/if}
 				{/each}
 			{/if}
 		</SectionItem>
@@ -67,9 +68,16 @@
 
 
 	.media-wrapper {
-		position: relative;
-		left: 25%;
-		border-radius: 2px black solid;
+		width: 100%;
+		height: 50vh;
+		resize: both;
+		border: 5px #338566 solid;
 	}
 
+	iframe {
+		width: 100%;
+		height: 100vh;
+		resize: both;
+		border: 5px #338566 solid;
+	}
 </style>
