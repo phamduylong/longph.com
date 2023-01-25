@@ -1,6 +1,6 @@
 ## Overview
-This is a personal CV-ish website I built with Svelte and SvelteKit.<br/>
-[Demo](https://longph.vercel.app)
+This is a personal CV-ish website I built with Svelte and SvelteKit, along with some TailwindCSS that was included in the [Flowbite](https://flowbite.com/docs/getting-started/introduction/) components library <br/>
+[Demo](https://longph.com)
 
 ## Structure 
 ```bash
@@ -14,55 +14,16 @@ This is a personal CV-ish website I built with Svelte and SvelteKit.<br/>
 │   ├── app.html
 │   ├── app.postcss
 │   ├── lib
-│   │   ├── ContactItem.svelte
-│   │   ├── ContactTab.svelte
-│   │   ├── Header.svelte
-│   │   ├── Icon.svelte
-│   │   ├── MainPage.svelte
-│   │   ├── Section.svelte
-│   │   ├── SectionItem.svelte
-│   │   ├── SideTab.svelte
-│   │   ├── SkillItem.svelte
-│   │   ├── SkillTab.svelte
-│   │   ├── TechIcon.svelte
 │   │   ├── assets
-│   │   │   ├── contact
-│   │   │   │   ├── discord.svg
-│   │   │   │   ├── email.svg
-│   │   │   │   ├── github.svg
-│   │   │   │   ├── hackerrank.svg
-│   │   │   │   ├── leetcode.svg
-│   │   │   │   ├── link.svg
-│   │   │   │   ├── linkedin.svg
-│   │   │   │   ├── phone.svg
-│   │   │   │   ├── stackoverflow.svg
-│   │   │   │   └── whatsapp.svg
-│   │   │   ├── data.js
-│   │   │   ├── pp.jpg
-│   │   │   └── tech
-│   │   │       ├── arduino.svg
-│   │   │       ├── c.svg
-│   │   │       ├── chartjs.svg
-│   │   │       ├── cpp.svg
-│   │   │       ├── css3.svg
-│   │   │       ├── ejs.svg
-│   │   │       ├── express.svg
-│   │   │       ├── html5.svg
-│   │   │       ├── javascript.svg
-│   │   │       ├── mongodb.svg
-│   │   │       ├── nodejs.svg
-│   │   │       ├── python.svg
-│   │   │       ├── robotframework.svg
-│   │   │       ├── svelte.svg
-│   │   │       └── sveltekit.svg
-│   │   └── mouseCoordinate.js
 │   └── routes
-│       ├── +layout.svelte
-│       └── +page.svelte
 ├── static
-│   └── favicon.ico
 ├── svelte.config.js
 ├── tailwind.config.cjs
-├── tree.txt
-└── vite.config.js
+└── vite.config.js```
+```
+## Cloning
+```bash
+git clone https://github.com/phamduylong/CV.git
+npm install
+npm run dev -- --open
 ```
