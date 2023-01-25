@@ -83,7 +83,7 @@ const section_datas = [
                 content: "A website to generate random quotes from Netflix series. Currently supporting Better Call Saul, Lucifer and Stranger Things.<br/><br/>",
                 stack: [svelte, sveltekit, html5, css3, javascript],
                 links: [
-                    {href: "https://random-netflix-quotes.vercel.app/", text: "Demo App"},
+                    {href: "https://random-netflix-quotes.vercel.app/", text: "Demo App", type: "demo"},
                     {href: "https://github.com/phamduylong/RandomNetflixQuotes", text: "GitHub repository"}
                 ]
             },
@@ -108,7 +108,7 @@ const section_datas = [
                 deploying and much more than that.<br/><br/>`,
                 stack: [svelte, sveltekit, html5, css3, javascript],
                 links: [
-                    {href: "https://shopping-list-phamduylong.vercel.app/", text: "Demo App"},
+                    {href: "https://shopping-list-phamduylong.vercel.app/", text: "Demo App", type: "demo"},
                     {href: "https://github.com/phamduylong/ShoppingList", text: "GitHub repository"}
                 ]
             },
@@ -165,7 +165,7 @@ const section_datas = [
                 whose content can be seen on the console by choosing some specific commands on the menu.<br/><br/>`,
                 stack: [cpp],
                 links: [
-                    {href: "https://replit.com/@PhamLong1/FootballRecord?v=1", text: "Repl"},
+                    {href: "https://replit.com/@PhamLong1/FootballRecord?embed=true", text: "Repl", type: "demo"},
                     {href: "https://github.com/phamduylong/FootballRecord", text: "GitHub repository"}
                 ]
             },
@@ -191,7 +191,7 @@ const section_datas = [
                 On each play, click on the option you want to choose (either Rock, Paper or Scissors), and wait for the result.<br/><br/>`,
                 stack: [html5, css3, javascript],
                 links: [
-                    {href: "https://phamduylong.github.io/rockpaperscissors/", text: "Demo App"},
+                    {href: "https://phamduylong.github.io/rockpaperscissors/", text: "Demo App", type: "demo"},
                     {href: "https://github.com/phamduylong/rockpaperscissors", text: "GitHub repository"}
                 ]
             }
