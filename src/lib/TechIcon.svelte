@@ -27,7 +27,7 @@
 >
 
 {#if showPreview}
-<div id="url_preview" in:fade style=" left:{$mouseCoordinate.x}px; top:{$mouseCoordinate.y + 20}px; " >
+<div id="url_preview" in:fade style="--left:{$mouseCoordinate.x}; --top:{$mouseCoordinate.y};" >
 		{#if previewReady}<span />
 		{:else}<p>Loading...</p>
 		{/if}
@@ -45,13 +45,6 @@
 {/if}
 
 <style>
-	a {
-		text-decoration: underline;
-	}
-
-	a:hover {
-		color: #338566;
-	}
 
 	.tech-item {
 		display: inline-block;
@@ -68,10 +61,18 @@
 	}
 
 	#url_preview {
+		position: absolute;
+		left: var(--left);
+		top: var(--top);
 		width: 300px;
 		height: 300px;
 		border: 1px solid #ccc;
 		border-radius: 5%;
 		margin: 2%;
+		z-index: 10;
+	}
+
+	iframe {
+		border-radius: 5%;
 	}
 </style>
