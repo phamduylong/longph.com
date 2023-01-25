@@ -66,18 +66,18 @@
 		color: #338566;
 	}
 
-
-	.media-wrapper {
-		width: 100%;
-		height: 50vh;
-		resize: both;
-		border: 5px #338566 solid;
-	}
-
 	iframe {
 		width: 100%;
 		height: 100vh;
 		resize: both;
 		border: 5px #338566 solid;
+	}
+
+	@media screen and (orientation: portrait) {
+		iframe {
+			width: 100%;
+			height: 20vh;
+			border: .5px #338566 solid;
+		}
 	}
 </style>
