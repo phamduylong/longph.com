@@ -18,7 +18,7 @@
 				<div class="stack-container">
 					<b>Tech Stack:</b><br />
 					{#each item.stack as tech}
-                        <SkillIcon {tech}/>
+                        <SkillIcon parentSection={item.title} {tech}/>
 					{/each}
 				</div>
 			{/if}
