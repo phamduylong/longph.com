@@ -39,9 +39,6 @@
 		width: 100%;
 		margin-top: 10%;
 		padding: 1%;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
-		box-shadow: 2px 2px;
 	}
 
 </style>
