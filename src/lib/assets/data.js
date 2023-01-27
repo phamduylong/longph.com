@@ -24,21 +24,21 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
 
-const arduino = {img: arduino_img_url, url: "https://en.wikipedia.org/wiki/Arduino"};
-const c = {img: c_img_url, url: "https://en.cppreference.com/w/c"};
-const chartjs = {img: chartjs_img_url, url: "https://www.chartjs.org/"};
-const cpp = {img: cpp_img_url, url: "https://en.cppreference.com/w/"};
-const css3 = {img: css3_img_url, url: "https://en.wikipedia.org/wiki/CSS"};
-const ejs = {img: ejs_img_url, url: "https://ejs.co/"};
-const express = {img: express_img_url, url: "https://expressjs.com/"};
-const html5 = {img: html5_img_url, url: "https://en.wikipedia.org/wiki/HTML5"};
-const javascript = {img: javascript_img_url, url: "https://en.wikipedia.org/wiki/JavaScript"};
-const mongodb = {img: mongodb_img_url, url: "https://en.wikipedia.org/wiki/MongoDB"};
-const nodejs = {img: nodejs_img_url, url: "https://nodejs.org/en/"};
-const python = {img: python_img_url, url: "https://en.wikipedia.org/wiki/Python_(programming_language)"};
-const robotframework = {img: robotframework_img_url, url: "https://robotframework.org/"};
-const svelte = {img: svelte_img_url, url: "https://svelte.dev/"};
-const sveltekit = {img: sveltekit_img_url, url: "https://kit.svelte.dev/"};
+const arduino = {img: arduino_img_url, url: "https://en.wikipedia.org/wiki/Arduino", alt: "Arduino Logo"};
+const c = {img: c_img_url, url: "https://en.cppreference.com/w/c", alt: "C Programming Language Logo"};
+const chartjs = {img: chartjs_img_url, url: "https://www.chartjs.org/", alt: "Chart.js Logo"};
+const cpp = {img: cpp_img_url, url: "https://en.cppreference.com/w/", alt: "C++ Programming Language Logo"};
+const css3 = {img: css3_img_url, url: "https://en.wikipedia.org/wiki/CSS", alt: "CSS Logo"};
+const ejs = {img: ejs_img_url, url: "https://ejs.co/", alt: "EJS Template Language Logo"};
+const express = {img: express_img_url, url: "https://expressjs.com/", alt: "Express Framework Logo"};
+const html5 = {img: html5_img_url, url: "https://en.wikipedia.org/wiki/HTML5", alt: "HTML5 Markup Language Logo"};
+const javascript = {img: javascript_img_url, url: "https://en.wikipedia.org/wiki/JavaScript", alt: "JavaScript Programming Language Logo"};
+const mongodb = {img: mongodb_img_url, url: "https://en.wikipedia.org/wiki/MongoDB", alt: "MongoDB Logo"};
+const nodejs = {img: nodejs_img_url, url: "https://nodejs.org/en/", alt: "NodeJs Logo"};
+const python = {img: python_img_url, url: "https://en.wikipedia.org/wiki/Python_(programming_language)", alt: "Python Programming Language Logo"};
+const robotframework = {img: robotframework_img_url, url: "https://robotframework.org/", alt: "Robot Framework Logo"};
+const svelte = {img: svelte_img_url, url: "https://svelte.dev/", alt: "Svelte Framework Logo"};
+const sveltekit = {img: sveltekit_img_url, url: "https://kit.svelte.dev/", alt: "SvelteKit Logo"};
 
 
 const section_datas = [
