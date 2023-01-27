@@ -1,13 +1,7 @@
 <script>
 	import SectionItem from './SectionItem.svelte';
-	import YouTube from 'svelte-youtube';
-	import DeviceDetector from 'svelte-device-detector';
     import SkillIcon from './TechIcon.svelte';
 	export let section_data;
-	const options = {
-		height: "470vh",
-		width: "100%"
-	}
 </script>
 
 <div id="title">
