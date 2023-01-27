@@ -1,68 +1,63 @@
 <script>
-	export let tech = {},
-		parentSection = '';
-	import { Popover } from 'flowbite-svelte';
+	export let tech = {};
 	import { slide } from 'svelte/transition';
 	import DeviceDetector from 'svelte-device-detector';
-	let placement = 'bottom';
+	import { Popover } from 'svelte-smooth-popover';
+	function openPopover() {
+		showPopover = true;
+	}
+	function closePopover() {
+		showPopover = false;
+	}
+	let hoverIframe;
 	let loaded = false;
+	let showPopover = false;
 </script>
 
-<a href={tech.url} target="_blank" rel="noreferrer" id={tech.url + parentSection}>
-	<img src={tech.img} alt={tech} class="tech-item" />
+<a href={tech.url} target="_blank" rel="noreferrer">
+	<img
+		src={tech.img}
+		alt={tech.alt}
+		class="tech-item"
+		on:mouseover={openPopover}
+		on:focus
+		on:mouseleave={() => {
+			hoverIframe = setTimeout(() => {
+				closePopover();
+			}, 100);
+		}}
+	/>
+	<DeviceDetector showInDevice="desktop">
+		<Popover
+			transition={slide}
+			align={'top-right'}
+			open={showPopover}
+			caretWidth={3}
+			caretBg="#E5E4E2"
+			offset={50}
+		>
+			<div class="shadow-sm bg-gray-100 ">
+				{#if loaded}
+					<span />
+				{:else}
+					<div class="mx-auto text-center">Loading...</div>
+				{/if}
+				<iframe
+					src={tech.url}
+					title={tech.url}
+					on:load={() => {
+						loaded = true;
+					}}
+					on:mouseover={() => {
+						clearTimeout(hoverIframe);
+					}}
+					on:focus
+					on:mouseleave={closePopover}
+				/>
+			</div>
+		</Popover>
+	</DeviceDetector>
 </a>
-
-<DeviceDetector showInDevice="desktop">
-	<Popover
-		class="w-64 text-sm font-bold z-50"
-		title="Info Page"
-		{placement}
-		transition={slide}
-		style="position: fixed; width: 12.5vw; height: 12.5vw;"
-		offset={50}
-		strategy="fixed"
-	>
-		{#if loaded}
-			<div />
-		{:else}
-			Loading...
-		{/if}
-		<iframe
-			src={tech.url}
-			title=""
-			on:load={() => {
-				loaded = true;
-			}}
-			style="height: 10vw; width: 12vw; z-index: 50"
-		/>
-	</Popover>
-</DeviceDetector>
-
-<DeviceDetector showInDevice="mobile">
-	<Popover
-		class="w-64 text-xs font-bold z-50"
-		title="Info Page"
-		{placement}
-		transition={slide}
-		style="position: fixed; width: 16vh; height: 16vh;"
-		offset={20}
-		strategy="fixed"
-	>
-		{#if loaded}
-			<div />
-		{:else}
-			Loading...
-		{/if}
-		<iframe
-			src={tech.url}
-			title=""
-			on:load={() => {
-				loaded = true;
-			}}
-			style="height: 8vh; width: 14vh; z-index: 50"
-		/>
-	</Popover>
-</DeviceDetector>
 
 <style>
 	.tech-item {
