@@ -53,8 +53,8 @@ const section_datas = [
                 `Junior year IT student at Metropolia University Of Applied Sciences. Passionate about Web Development on both front-end and back-end.
                 I have worked with Svelte and SvelteKit mainly on the front-end side (this whole page itself was built with SvelteKit). On the server side of things,
                 I have worked my way through multiple projects with NodeJs and Express framework, with MongoDB being my favorite choice 
-                of database (but I can make use of SQLite if needa be a relation database 😎). On other other hand I also have plenty experiences with Embedded Systems, specifically with 
-                nxp's LPC1549 development board and the Raspberry Pi Pico W. I have familiarized myself with most important communication protocols: UART, I2C, Modbus RTU, MQTT
+                of database (but I can make use of SQLite if needa be a relational database 😎). On other other hand I also have plenty experiences with Embedded Systems, specifically with 
+                nxp's LPC1549 development board and the Raspberry Pi's Pico W. I have familiarized myself with most important communication protocols: UART, I2C, Modbus RTU, MQTT
                 and can work around them without much problem.`
             }
         ]
@@ -67,7 +67,7 @@ const section_datas = [
                 title: "Metropolia UAS", 
                 timeline: "August 2020 - July 2024 (estimated)", 
                 content: `The largest college (Polytechnic/Ammattikorkeakoulu) there is in Finland. I attended the Information Technology programme 
-                and have progressed quite well for 3 years so far with a GPA of 4.03/5. My major is Embedded Systems Programming but best believe 
+                and have progressed quite well for 3 years so far with a GPA of 4.03/5. My major is Embedded Systems Programming but
                 I'm way more versatile than just an Embedded guy 😉.`
             }
         ]
