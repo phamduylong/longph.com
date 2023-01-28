@@ -211,6 +211,7 @@ const skills = [
     { skill: 'Svelte', progress: '50' },
     { skill: 'HTML5', progress: '50' },
     { skill: 'CSS3', progress: '40' },
+    {skill: 'Tailwind CSS', progress: '30'},
     { skill: 'Embedded Programming', progress: '50' },
     { skill: 'C', progress: '60' },
     { skill: 'C++', progress: '70' },
