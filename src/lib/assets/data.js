@@ -23,6 +23,7 @@ import python_img_url from '$lib/assets/tech/python.svg';
 import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
+import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 
 const arduino = {img: arduino_img_url, url: "https://en.wikipedia.org/wiki/Arduino", alt: "Arduino Logo"};
 const c = {img: c_img_url, url: "https://en.cppreference.com/w/c", alt: "C Programming Language Logo"};
@@ -39,6 +40,7 @@ const python = {img: python_img_url, url: "https://en.wikipedia.org/wiki/Python_
 const robotframework = {img: robotframework_img_url, url: "https://robotframework.org/", alt: "Robot Framework Logo"};
 const svelte = {img: svelte_img_url, url: "https://svelte.dev/", alt: "Svelte Framework Logo"};
 const sveltekit = {img: sveltekit_img_url, url: "https://kit.svelte.dev/", alt: "SvelteKit Logo"};
+const tailwindcss = {img: tailwindcss_img_url, url: "https://tailwindcss.com/", alt: "Tailwind CSS Logo"}
 
 
 const section_datas = [
@@ -94,7 +96,7 @@ const section_datas = [
                 content: `This website! Live demo right here you're reading. I made it with the help of Svelte and SvelteKit, as well as some external UI packages. Most of the features
                 can be viewed on a mobile device but the YouTube player would be removed due to scaling issues of the video player tools. It is hosted by Vercel 
                 at the time of this writing 🙂<br/><br/>`,
-                stack: [svelte, sveltekit, html5, css3, javascript],
+                stack: [svelte, sveltekit, html5, css3, tailwindcss, javascript],
                 links: [
                     {href: "https://github.com/phamduylong/CV", text: "GitHub repository"}
                 ]
