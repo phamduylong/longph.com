@@ -36,13 +36,13 @@
 			caretBg="#E5E4E2"
 			offset={50}
 		>
-			<div class="shadow-sm bg-gray-100 ">
+			<div class="shadow-sm bg-gray-100 rounded-full">
 				{#if loaded}
 					<span />
 				{:else}
-					<div class="mx-auto text-center">Loading...</div>
+					<div class="mx-auto text-center rounded-full">Loading...</div>
 				{/if}
-				<iframe
+				<iframe class="p-1.5 rounded-full"
 					src={tech.url}
 					title={tech.url}
 					on:load={() => {
