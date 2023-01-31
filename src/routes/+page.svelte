@@ -1,6 +1,4 @@
 <script>
-	export let data;
-	console.log(data.server_data);
     import SideTab from "../lib/SideTab.svelte";
     import MainPage from "../lib/MainPage.svelte";
 	import SvelteSeo from 'svelte-seo';
@@ -11,16 +9,7 @@
 		title: "Long Pham | Personal Page",
 		description: "Long Pham's Personal Page",
 		type: "website",
-		url: "https://longph.com",
-		images: [
-			{
-				url: 'https://picsum.photos/400/300',
-				width: 400,
-				height: 300,
-				alt: ''
-			}
-		]
-
+		url: "https://longph.com"
 	}}
 />
 <SideTab />
