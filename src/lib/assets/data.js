@@ -236,7 +236,7 @@ const contact = [
     {img: stackoverflow_img_url, content: "pham-long", url: "https://stackoverflow.com/users/14126819/pham-long"},
     {img: phone_img_url, content: "+35846-888-5062", url:"tel:+358468885062"},
     {img: phone_img_url, content: "+8491-323-0502", url:"tel:+84913230502"},
-    {img: whatsapp_img_url, content: "+35846-888-5062", url:"https://wa.link/lmfxj0"},
+    {img: whatsapp_img_url, content: "+35846-888-5062", url:"https://api.whatsapp.com/send?phone=358468885062"},
 ];
 
 
