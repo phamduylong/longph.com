@@ -68,6 +68,7 @@
 						class="mx-auto w-1/2 md:w-1/12 appearance-none rounded-xl border-2 bg-primary-green py-2 px-4 leading-tight text-black focus:outline-none"
 					/>
 				</div>
+				<input type="hidden" name="redirectTo" value="https://longph.com">
 			</div>
 		</form>
 	</div>
