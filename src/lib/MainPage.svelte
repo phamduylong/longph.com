@@ -1,6 +1,7 @@
 <script>
 	import Section from "./Section.svelte";
 	import { section_datas } from './assets/data.js';
+	import ContactMeTab from "./ContactMeTab.svelte";
 </script>
 
 <div id="main">
@@ -11,9 +12,12 @@
 
 	<div id="sections">
 		{#each section_datas as section_data}
-			<Section {section_data} />
+			<Section {section_data}></Section>
 		{/each}
+		<ContactMeTab/>
 	</div>
+
+	
 </div>
 
 <style>
