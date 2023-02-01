@@ -4,7 +4,7 @@
 	export let section_data;
 </script>
 
-<div id="title">
+<div id="wrapper">
 	{section_data.title.toUpperCase()}
 	{#each section_data.entries as item}
 		<SectionItem title={item.title} timeline={item.timeline} content={item.content}>
@@ -46,10 +46,11 @@
 
 
 <style>
-	#title {
+	#wrapper {
 		color: #338566;
 		font-size: 3vw;
 		margin: 10%;
+		padding: 1%;
 	}
 
 	a {
