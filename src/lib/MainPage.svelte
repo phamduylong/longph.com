@@ -40,7 +40,7 @@
 		top: 25%;
 		left: 50%;
 		width: 50%;
-		transform: translate(-25%, -50%);
+		transform: translate(-30%, -50%);
 		border-top: black 5px solid;
 		height: 20%;
 	}
@@ -90,6 +90,12 @@
 			height: 60%;
 			max-width: 100%;
 			width: 60%;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#intro {
+			border-top: white 5px solid;
 		}
 	}
 </style>
