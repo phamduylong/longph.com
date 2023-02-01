@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"agnostic-svelte": "^1.1.27",
 		"svelte-seo": "^1.4.1",
 		"svelte-smooth-popover": "^1.0.7"
 	}

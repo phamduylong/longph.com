@@ -5,7 +5,7 @@
 </script>
 
 <div id="wrapper">
-	{section_data.title.toUpperCase()}
+	<p class="text-primary-green">{section_data.title.toUpperCase()}</p>
 	{#each section_data.entries as item}
 		<SectionItem title={item.title} timeline={item.timeline} content={item.content}>
 			{#if item.stack !== undefined && item.stack !== []}
@@ -47,11 +47,12 @@
 
 <style>
 	#wrapper {
-		color: #338566;
 		font-size: 3vw;
 		margin: 10%;
 		padding: 1%;
 	}
+
+
 
 	a {
 		text-decoration: underline;
