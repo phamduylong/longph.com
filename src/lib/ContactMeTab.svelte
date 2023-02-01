@@ -4,6 +4,8 @@
 <div id="wrapper" class="m-1/10 text-3vw ">
 	<h1 class="place-self-center text-primary-green md:text-3vw">HIT ME UP 👇</h1>
 	<br/>
+	<p class="text-base md:text-xl m-2 ">I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
+		Write to me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉 </p>
 	<div>
 		<form action="https://api.staticforms.xyz/submit" method="post" class="p-1/100 md:mb-0 md:text-base">
 			<input type="hidden" name="accessKey" value="cb05fe42-31b2-4d6c-8d07-4e45b326a110" />
