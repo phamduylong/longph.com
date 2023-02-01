@@ -3,6 +3,8 @@
 	import { slide } from 'svelte/transition';
 	import DeviceDetector from 'svelte-device-detector';
 	import { Popover } from 'svelte-smooth-popover';
+	import { Spinner } from 'agnostic-svelte';
+	import 'agnostic-svelte/css/common.min.css';
 	function openPopover() {
 		showPopover = true;
 	}
@@ -36,13 +38,15 @@
 			caretBg="#E5E4E2"
 			offset={50}
 		>
-			<div class="shadow-sm bg-[#338566] rounded-full">
+			<div class="rounded-full bg-primary-green shadow-sm">
 				{#if loaded}
 					<span />
 				{:else}
-					<div class="mx-auto text-center text-zinc-50">Loading...</div>
+					<div class="flex justify-center"><Spinner size="large"/></div>
+					
 				{/if}
-				<iframe class="p-1 rounded-full"
+				<iframe
+					class="rounded-full p-1"
 					src={tech.url}
 					title={tech.url}
 					on:load={() => {
