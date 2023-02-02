@@ -33,7 +33,7 @@
 				<div class="flex items-center">
 					<!-- Grid cell -->
 					<label
-						class="mb-1 mr-2 block whitespace-nowrap font-bold text-black md:mb-0"
+						class="mb-1 mr-2 block whitespace-nowrap font-bold md:mb-0"
 						for="last-name">Email</label
 					>
 				</div>
