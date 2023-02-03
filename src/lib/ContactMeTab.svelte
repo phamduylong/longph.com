@@ -1,4 +1,5 @@
 <script>
+
 </script>
 
 <div id="wrapper" class="m-1/10">
@@ -8,6 +9,7 @@
 	<div>
 		<form action="https://api.staticforms.xyz/submit" method="post" class="p-1/100 md:mb-0 md:text-base">
 			<input type="hidden" name="accessKey" value="cb05fe42-31b2-4d6c-8d07-4e45b326a110" />
+			<input type="text" name="honeypot" style="display: none;">
 
 			<div class="grid grid-cols-3 gap-3 md:grid-cols-6">
 				<!-- Grid Container -->
@@ -33,7 +35,7 @@
 					<!-- Grid cell -->
 					<label
 						class="mb-1 mr-2 block whitespace-nowrap font-bold md:mb-0"
-						for="last-name">Email</label
+						for="email">Email</label
 					>
 				</div>
 				<div class="col-span-6 flex items-center">
@@ -41,6 +43,8 @@
 					<input
 						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
 						name="email"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+						title="A valid email is required!"
 						type="text"
 						placeholder="john.doe@example.com"
 						required
