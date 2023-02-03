@@ -89,4 +89,9 @@
 		margin-top: 4%;
 		margin-bottom: 4%;
 	}
+
+	label:after {
+		content:"*";
+		color: red;
+  	}
 </style>
