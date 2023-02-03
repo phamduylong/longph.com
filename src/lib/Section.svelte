@@ -1,6 +1,6 @@
 <script>
 	import SectionItem from './SectionItem.svelte';
-    import SkillIcon from './TechIcon.svelte';
+    import TechIcon from './TechIcon.svelte';
 	export let section_data;
 </script>
 
@@ -12,7 +12,7 @@
 				<div class="stack-container">
 					<b>Tech Stack:</b><br />
 					{#each item.stack as tech}
-                        <SkillIcon parentSection={item.title} {tech}/>
+                        <TechIcon parentSection={item.title} {tech}/>
 					{/each}
 				</div>
 			{/if}
@@ -22,7 +22,7 @@
 				{#each item.media as media}
 					{#if media.type === 'youtube'}
 						<a href={"https://www.youtube.com/watch?v=" + media.ytid} target="_blank" rel="noreferrer">{media.caption}
-							<iframe src={"https://www.youtube.com/embed/" + media.ytid} title="Demo"/>
+							<iframe src={"https://www.youtube.com/embed/" + media.ytid} title="Demo"></iframe>
 						</a>
 						<br />
 					{/if}
@@ -33,7 +33,7 @@
 				<br /><br />
 				{#each item.links as hl}
 					{#if hl.type === "demo"}
-					<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}<iframe src={hl.href} title="Demo"/></a><br />
+						<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}<iframe src={hl.href} title="Demo"></iframe></a><br />
 					{:else}
 					<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}</a><br />
 					{/if}
@@ -73,7 +73,7 @@
 		iframe {
 			width: 100%;
 			height: 20vh;
-			border: .5px #338566 solid;
+			border: 1px #338566 solid;
 		}
 	}
 </style>
