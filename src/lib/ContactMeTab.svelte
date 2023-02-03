@@ -1,10 +1,9 @@
 <script>
 </script>
 
-<div id="wrapper" class="m-1/10 text-3vw ">
-	<h1 class="place-self-center text-primary-green md:text-3vw">HIT ME UP 👇</h1>
-	<br/>
-	<p class="text-base md:text-xl m-2 ">I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
+<div id="wrapper" class="m-1/10">
+	<h1 class="place-self-center text-primary-green">HIT ME UP 👇</h1>
+	<p class="m-2">I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
 		Write to me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉 </p>
 	<div>
 		<form action="https://api.staticforms.xyz/submit" method="post" class="p-1/100 md:mb-0 md:text-base">
@@ -77,5 +76,13 @@
 </div>
 
 <style>
+	p {
+		font-size: 1vw;
+	}
 
+	h1 {
+		font-size: 3vw;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
 </style>
