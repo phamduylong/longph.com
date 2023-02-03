@@ -39,11 +39,8 @@
 			offset={50}
 		>
 			<div class="rounded-full bg-primary-green shadow-sm">
-				{#if loaded}
-					<span />
-				{:else}
-					<div class="flex justify-center"><Spinner size="large"/></div>
-					
+				{#if !loaded}
+					<div class="justify-center items-center flex w-full h-full"><Spinner size="large"/></div>
 				{/if}
 				<iframe
 					class="rounded-full p-1"
@@ -56,8 +53,7 @@
 						clearTimeout(hoverIframe);
 					}}
 					on:focus
-					on:mouseleave={closePopover}
-				/>
+					on:mouseleave={closePopover}></iframe>
 			</div>
 		</Popover>
 	</DeviceDetector>
@@ -69,6 +65,7 @@
 		height: 5%;
 		width: 5%;
 		margin-left: 1%;
+		margin-right: 1%;
 		margin-top: 2%;
 	}
 
@@ -76,5 +73,9 @@
 		transform: scale(1.5);
 		margin-left: 2%;
 		margin-right: 2%;
+	}
+
+	a {
+		font-size: 0;
 	}
 </style>
