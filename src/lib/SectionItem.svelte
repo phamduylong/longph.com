@@ -6,10 +6,10 @@
 
 <div id="item">
 	<div id="title">
-		{#if title !== ''}<strong>{title} | {timeline}</strong>{/if}
+		<a href={"#" + title}>{#if title !== ''}<strong>{title} | {timeline}</strong>{/if}</a>
 	</div>
 
-	<div id="content">
+	<div id={title}>
 		{@html content}
 		<slot />
 	</div>
@@ -24,5 +24,10 @@
 
 	#title {
 		font-size: 1.5vw;
+	}
+
+	a {
+		text-decoration: none;
+		color: coral;
 	}
 </style>

@@ -5,7 +5,7 @@
 </script>
 
 <div id="wrapper">
-	<p class="text-primary-green">{section_data.title.toUpperCase()}</p>
+	<p id={section_data.title}><a class="text-primary-green no-underline" href={"#" + section_data.title}>{section_data.title.toUpperCase()}</a></p>
 	{#each section_data.entries as item}
 		<SectionItem title={item.title} timeline={item.timeline} content={item.content}>
 			{#if item.stack !== undefined && item.stack !== []}
@@ -21,7 +21,7 @@
 				<br /><br />
 				{#each item.media as media}
 					{#if media.type === 'youtube'}
-						<a href={"https://www.youtube.com/watch?v=" + media.ytid} target="_blank" rel="noreferrer">{media.caption}
+						<a href={"https://www.youtube.com/watch?v=" + media.ytid} target="_blank" rel="noreferrer" class="underline hover:text-primary-green">{media.caption}
 							<iframe src={"https://www.youtube.com/embed/" + media.ytid} title="Demo"></iframe>
 						</a>
 						<br />
@@ -33,9 +33,9 @@
 				<br /><br />
 				{#each item.links as hl}
 					{#if hl.type === "demo"}
-						<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}<iframe src={hl.href} title="Demo"></iframe></a><br />
+						<a href={hl.href} target="_blank" rel="noreferrer" class="underline hover:text-primary-green">{hl.text}<iframe src={hl.href} title="Demo"></iframe></a><br />
 					{:else}
-					<a href={hl.href} target="_blank" rel="noreferrer">{hl.text}</a><br />
+						<a href={hl.href} target="_blank" rel="noreferrer" class="underline hover:text-primary-green">{hl.text}</a><br />
 					{/if}
 				{/each}
 			{/if}
@@ -50,16 +50,6 @@
 		font-size: 3vw;
 		margin: 10%;
 		padding: 1%;
-	}
-
-
-
-	a {
-		text-decoration: underline;
-	}
-
-	a:hover {
-		color: #338566;
 	}
 
 	iframe {
