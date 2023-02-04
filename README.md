@@ -11,19 +11,17 @@ This is a personal CV-ish website I built with Svelte and SvelteKit, along with 
 ├── package.json
 ├── postcss.config.cjs
 ├── src
-│   ├── app.html
-│   ├── app.postcss
 │   ├── lib
-│   │   ├── assets
+│   │   └── assets
 │   └── routes
 ├── static
 ├── svelte.config.js
 ├── tailwind.config.cjs
 └── vite.config.js
 ```
-## Cloning
+## Setup
 ```bash
-git clone https://github.com/phamduylong/CV.git
+git clone https://github.com/phamduylong/longph-portfolio.git
 npm install
 npm run dev -- --open
 ```
