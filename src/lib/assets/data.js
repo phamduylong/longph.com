@@ -99,7 +99,7 @@ const section_datas = [
                 acquired by Vercel. This project is also the first time I got in touch with Tailwind classes 🙂<br/><br/>`,
                 stack: [svelte, sveltekit, html5, css3, tailwindcss, javascript],
                 links: [
-                    {href: "https://github.com/phamduylong/CV", text: "GitHub repository"}
+                    {href: "https://github.com/phamduylong/longph-portfolio/", text: "GitHub repository"}
                 ]
             },
 
