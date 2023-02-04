@@ -2,10 +2,14 @@
 	import SectionItem from './SectionItem.svelte';
     import TechIcon from './TechIcon.svelte';
 	export let section_data;
+
+	function removeWhitespaces(str) {
+		return str.replace(/\s+/g, '').toLowerCase();
+	}
 </script>
 
 <div id="wrapper">
-	<p id={section_data.title}><a class="text-primary-green no-underline" href={"#" + section_data.title}>{section_data.title.toUpperCase()}</a></p>
+	<p id={removeWhitespaces(section_data.title)}><a class="text-primary-green no-underline" href={"#" + removeWhitespaces(section_data.title)}>{section_data.title.toUpperCase()}</a></p>
 	{#each section_data.entries as item}
 		<SectionItem title={item.title} timeline={item.timeline} content={item.content}>
 			{#if item.stack !== undefined && item.stack !== []}

@@ -2,14 +2,20 @@
 	export let title = '',
 		timeline = '2023',
 		content = '';
+
+	function removeWhitespaces(str) {
+		return str.replace(/\s+/g, '').toLowerCase();
+	}
 </script>
 
 <div id="item">
-	<div id="title">
-		<a href={"#" + title}>{#if title !== ''}<strong>{title} | {timeline}</strong>{/if}</a>
+	<div class="title" id={removeWhitespaces(title)}>
+		<a href={'#' + removeWhitespaces(title)}
+			>{#if title !== ''}<strong>{title} | {timeline}</strong>{/if}</a
+		>
 	</div>
 
-	<div id={title}>
+	<div>
 		{@html content}
 		<slot />
 	</div>
@@ -22,8 +28,8 @@
 		margin-bottom: 4%;
 	}
 
-	#title {
-		font-size: 1.5vw;
+	.title {
+		font-size: 1.75vw;
 	}
 
 	a {

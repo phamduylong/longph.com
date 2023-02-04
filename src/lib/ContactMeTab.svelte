@@ -3,7 +3,7 @@
 </script>
 
 <div id="wrapper" class="m-1/10">
-	<h1 id="hmu" class="place-self-center"><a class="text-primary-green no-underline" href="#hmu">HIT ME UP</a> 👇</h1>
+	<h1 id="hitmeup" class="place-self-center"><a class="text-primary-green no-underline" href="#hitmeup">HIT ME UP</a> 👇</h1>
 	<p class="m-2">I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
 		Write to me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉 </p>
 	<div>
