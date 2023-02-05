@@ -22,8 +22,8 @@ function createThemeStore() {
 	return {
 		subscribe,
 		init: async () => { init_theme = await asyncLocalStorage.getItem(STORAGE_KEY); set(init_theme); document.firstElementChild.setAttribute('color-scheme', init_theme) },
-		setDarkTheme: () => {set('dark'); document.firstElementChild.setAttribute('color-scheme', "dark"); localStorage.setItem(STORAGE_KEY, "dark"); },
-		setLightTheme: () => {set('light'); document.firstElementChild.setAttribute('color-scheme', "light"); localStorage.setItem(STORAGE_KEY, "light");}
+		setDarkTheme: async () => {set('dark'); document.firstElementChild.setAttribute('color-scheme', "dark"); await asyncLocalStorage.setItem(STORAGE_KEY, "dark"); },
+		setLightTheme: async () => {set('light'); document.firstElementChild.setAttribute('color-scheme', "light"); await asyncLocalStorage.setItem(STORAGE_KEY, "light");}
 	};
 }
 
