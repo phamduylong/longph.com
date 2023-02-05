@@ -34,4 +34,8 @@
 	::-webkit-scrollbar-thumb:hover {
 		background: rgba(0, 0, 0, 0.1);
 	}
+
+	a:focus, input:focus, text:focus {
+		box-shadow: none;
+	}
 </style>
