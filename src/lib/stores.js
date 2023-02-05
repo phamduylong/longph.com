@@ -1,22 +1,29 @@
 import { writable } from 'svelte/store';
-import { browser } from '$app/environment';
+let init_theme;
 const STORAGE_KEY = 'stored-theme';
-let init_theme = "light";
 
-//check if initial theme is available
-if (browser) {
-	if (typeof localStorage && localStorage.getItem(STORAGE_KEY) !== null)
-		init_theme = localStorage.getItem(STORAGE_KEY);
-	else { localStorage.setItem(STORAGE_KEY, init_theme); }
+const asyncLocalStorage = {
+	setItem: async function (key, value) {
+		return Promise.resolve().then(() => {
+			localStorage.setItem(key, value);
+		});
+	},
+
+	getItem: async function(key) {
+		return Promise.resolve().then(() => {
+			return localStorage.getItem(key)
+		})
+	}
 }
 
 function createThemeStore() {
-	const { subscribe, set } = writable(init_theme);
+	const { subscribe, set } = writable( "dark" );
 
 	return {
 		subscribe,
-		setDarkTheme: () => set('dark'),
-		setLightTheme: () => set('light')
+		init: async () => { init_theme = await asyncLocalStorage.getItem(STORAGE_KEY); set(init_theme); document.firstElementChild.setAttribute('color-scheme', init_theme) },
+		setDarkTheme: () => {set('dark'); document.firstElementChild.setAttribute('color-scheme', "dark"); localStorage.setItem(STORAGE_KEY, "dark"); },
+		setLightTheme: () => {set('light'); document.firstElementChild.setAttribute('color-scheme', "light"); localStorage.setItem(STORAGE_KEY, "light");}
 	};
 }
 
