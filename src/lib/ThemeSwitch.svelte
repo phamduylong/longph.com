@@ -6,8 +6,8 @@
 
 	async function toggleTheme() {
 		if ($theme === 'dark') await theme.setLightTheme();
-		else  await theme.setDarkTheme();
+		else await theme.setDarkTheme();
 	}
 </script>
 
-<div class={classes} on:click={toggleTheme} on:keypress>{icon}</div>
+<button class={classes} on:click={toggleTheme}>{icon}</button>
