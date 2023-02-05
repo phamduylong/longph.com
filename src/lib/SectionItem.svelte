@@ -23,13 +23,13 @@
 
 <style>
 	#item {
-		font-size: 1vw;
+		font-size: 1.25vw;
 		margin-top: 4%;
 		margin-bottom: 4%;
 	}
 
 	.title {
-		font-size: 1.75vw;
+		font-size: 2vw;
 	}
 
 	a {

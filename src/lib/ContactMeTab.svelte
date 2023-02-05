@@ -2,12 +2,12 @@
 
 </script>
 
-<div id="wrapper" class="m-1/10">
+<div id="wrapper" class="m-1/10 p-1/100">
 	<h1 id="hitmeup" class="place-self-center"><a class="text-primary-green no-underline" href="#hitmeup">HIT ME UP</a> 👇</h1>
-	<p class="m-2">I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
+	<p>I'm actively looking for a Software Development/Testing Role and other opportunities in the IT industry as well. I'd also love to collaborate on/contribute to open source projects. 
 		Write to me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉 </p>
 	<div>
-		<form action="https://api.staticforms.xyz/submit" method="post" class="p-1/100 md:mb-0 md:text-base">
+		<form action="https://api.staticforms.xyz/submit" method="post" class="my-4">
 			<input type="hidden" name="accessKey" value="cb05fe42-31b2-4d6c-8d07-4e45b326a110" />
 			<input type="text" name="honeypot" style="display: none;">
 
@@ -66,7 +66,7 @@
 					/>
 				</div>
 
-				<div class="col-span-6 flex items-center md:mt-5 ">
+				<div class="col-span-6 flex items-center my-4 lg:my-10 ">
 					<input
 						type="submit"
 						value="Submit"
@@ -81,13 +81,22 @@
 
 <style>
 	p {
-		font-size: 1vw;
+		font-size: 1.25vw;
 	}
 
 	h1 {
 		font-size: 3vw;
 		margin-top: 4%;
 		margin-bottom: 4%;
+	}
+
+	input[type="text"], textarea {
+		width: 100%;
+	}
+
+
+	label {
+		font-size: 1.5vw;
 	}
 
 	label:after {
