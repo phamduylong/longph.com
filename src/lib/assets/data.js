@@ -217,6 +217,23 @@ const section_datas = [
 				]
 			}
 		]
+	},
+
+	{
+		title: 'Open Source Contributions',
+		entries: [
+			{
+				title: 'status.pizza',
+				timeline: '2023',
+				content: `Contribution: Managing content and assets, adding new information on the landing page.`,
+				links: [
+					{
+						href: "https://status.pizza/",
+						text: "Project Page"
+					}
+				]
+			}
+		]
 	}
 ];
 
