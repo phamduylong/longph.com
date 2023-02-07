@@ -1,11 +1,11 @@
 <script>
     export let img = "", content = "duy-long-pham", url= "https://linkedin.com/in/duy-long-pham";
 </script>
-<div id="wrapper">
-    <a href={url} target="blank"><img align="center" src= {img} alt="duy-long-pham"/>
-        {content}
+<span id="wrapper">
+    <a href={url} target="blank" class="inline-block text-primary-green"><img align="center" src={img} alt="duy-long-pham"/>
+        <p class="lg:hover:underline inline-block">{content}</p>
     </a>
-</div>
+</span>
 
 
 <style>
@@ -22,6 +22,6 @@
     }
 
     a {
-        display: inline-block;
+        text-decoration: none !important;
     }
 </style>
