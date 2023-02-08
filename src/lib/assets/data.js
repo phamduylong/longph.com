@@ -26,6 +26,7 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
+import { to_number } from 'svelte/internal';
 
 const arduino = {
 	img: arduino_img_url,
@@ -255,6 +256,28 @@ const section_datas = [
 					{
 						href: "https://status.pizza/",
 						text: "Project Page"
+					},
+
+					{
+						href: "https://github.com/pweth/status.pizza/pull/4",
+						text: "PR"
+					}
+				]
+			},
+
+			{
+				title: 'ghloc-web',
+				timeline: '2023',
+				content: `Contribution: Fixing anchor href issues`,
+				links: [
+					{
+						href: "https://ghloc.vercel.app/",
+						text: "Project Page"
+					},
+
+					{
+						href: "https://github.com/pajecawav/ghloc-web/pull/19",
+						text: "PR"
 					}
 				]
 			}
