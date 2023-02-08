@@ -141,6 +141,18 @@ const section_datas = [
 			},
 
 			{
+				title: 'BLV Anh Ngok Quotes API',
+				timeline: '2023',
+				content: `An API to generate quotes from Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. Quotes are stored and retried from
+				a file and will be returned in JSON format. Server written with Node and Express.`,
+				stack: [nodejs, express, javascript],
+				links: [
+					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
+					{href: 'https://github.com/phamduylong/truong-anh-ngok-quotes', text: 'GitHub repository'}
+				]
+			},
+
+			{
 				title: 'ABB Ventilation Project',
 				timeline: '2022',
 				content: `The project is combination of a Ventilation Fan System with Vaisala's GMP252 Carbon Dioxide probe, HMP60 Temperature and Humidity sensor. 
