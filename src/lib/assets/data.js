@@ -10,6 +10,7 @@ import whatsapp_img_url from '$lib/assets/contact/whatsapp.svg';
 
 import arduino_img_url from '$lib/assets/tech/arduino.svg';
 import c_img_url from '$lib/assets/tech/c.svg';
+import chai_img_url from '$lib/assets/tech/chai.svg';
 import chartjs_img_url from '$lib/assets/tech/chartjs.svg';
 import cpp_img_url from '$lib/assets/tech/cpp.svg';
 import css3_img_url from '$lib/assets/tech/css3.svg';
@@ -17,6 +18,7 @@ import ejs_img_url from '$lib/assets/tech/ejs.svg';
 import express_img_url from '$lib/assets/tech/express.svg';
 import html5_img_url from '$lib/assets/tech/html5.svg';
 import javascript_img_url from '$lib/assets/tech/javascript.svg';
+import mocha_img_url from '$lib/assets/tech/mocha.svg'
 import mongodb_img_url from '$lib/assets/tech/mongodb.svg';
 import nodejs_img_url from '$lib/assets/tech/nodejs.svg';
 import python_img_url from '$lib/assets/tech/python.svg';
@@ -34,6 +36,11 @@ const c = {
 	img: c_img_url,
 	url: 'https://en.cppreference.com/w/c',
 	alt: 'C Programming Language Logo'
+};
+const chai = {
+	img: chai_img_url,
+	url: 'https://www.chaijs.com/',
+	alt: 'Chai Assertion Library'
 };
 const chartjs = { img: chartjs_img_url, url: 'https://www.chartjs.org/', alt: 'Chart.js Logo' };
 const cpp = {
@@ -58,6 +65,11 @@ const javascript = {
 	url: 'https://en.wikipedia.org/wiki/JavaScript',
 	alt: 'JavaScript Programming Language Logo'
 };
+const mocha = {
+	img: mocha_img_url,
+	url: 'https://mochajs.org/',
+	alt: 'Mocha Testing Framework'
+}
 const mongodb = {
 	img: mongodb_img_url,
 	url: 'https://en.wikipedia.org/wiki/MongoDB',
@@ -81,6 +93,7 @@ const tailwindcss = {
 	url: 'https://tailwindcss.com/',
 	alt: 'Tailwind CSS Logo'
 };
+
 
 const section_datas = [
 	{
@@ -144,8 +157,8 @@ const section_datas = [
 				title: 'BLV Anh Ngok Quotes API',
 				timeline: '2023',
 				content: `An API to generate quotes from Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. Quotes are stored and retried from
-				a file and will be returned in JSON format. Server written with Node and Express.`,
-				stack: [nodejs, express, javascript],
+				a file and will be returned in JSON format. The server is written with Node and Express, with unit tests using MochaJs and ChaiJs.`,
+				stack: [nodejs, express, javascript, mocha, chai],
 				links: [
 					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
 					{href: 'https://github.com/phamduylong/truong-anh-ngok-quotes', text: 'GitHub repository'}
