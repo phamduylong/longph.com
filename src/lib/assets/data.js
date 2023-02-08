@@ -157,7 +157,7 @@ const section_datas = [
 				title: 'BLV Anh Ngok Quotes API',
 				timeline: '2023',
 				content: `An API to generate quotes from Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. Quotes are stored and retried from
-				a file and will be returned in JSON format. The server is written with Node and Express, with unit tests using MochaJs and ChaiJs.`,
+				a file and will be returned in JSON format. The server is written with Node and Express, with unit tests using MochaJs and ChaiJs.<br/><br/>`,
 				stack: [nodejs, express, javascript, mocha, chai],
 				links: [
 					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
