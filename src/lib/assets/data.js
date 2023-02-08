@@ -67,7 +67,7 @@ const javascript = {
 };
 const mocha = {
 	img: mocha_img_url,
-	url: 'https://mochajs.org/',
+	url: 'https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)',
 	alt: 'Mocha Testing Framework'
 }
 const mongodb = {
