@@ -14,6 +14,7 @@ import chai_img_url from '$lib/assets/tech/chai.svg';
 import chartjs_img_url from '$lib/assets/tech/chartjs.svg';
 import cpp_img_url from '$lib/assets/tech/cpp.svg';
 import css3_img_url from '$lib/assets/tech/css3.svg';
+import cypress_img_url from '$lib/assets/tech/cypress.svg';
 import ejs_img_url from '$lib/assets/tech/ejs.svg';
 import express_img_url from '$lib/assets/tech/express.svg';
 import html5_img_url from '$lib/assets/tech/html5.svg';
@@ -50,6 +51,7 @@ const cpp = {
 	alt: 'C++ Programming Language Logo'
 };
 const css3 = { img: css3_img_url, url: 'https://en.wikipedia.org/wiki/CSS', alt: 'CSS Logo' };
+const cypress = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo'}
 const ejs = { img: ejs_img_url, url: 'https://ejs.co/', alt: 'EJS Template Language Logo' };
 const express = {
 	img: express_img_url,
@@ -157,9 +159,10 @@ const section_datas = [
 			{
 				title: 'BLV Anh Ngok Quotes API',
 				timeline: '2023',
-				content: `An API to generate quotes from Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. Quotes are stored and retried from
-				a file and will be returned in JSON format. The server is written with Node and Express, with unit tests using MochaJs and ChaiJs.<br/><br/>`,
-				stack: [nodejs, express, javascript, mocha, chai],
+				content: `An API to generate quotes from Commentator Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. 
+				Quotes will be returned in JSON format on requests (see demo). The server is written with Express, tested with unit tests written in Mocha & Chai 
+				and end-to-end tests with Cypress.<br/><br/>`,
+				stack: [nodejs, express, javascript, mocha, chai, cypress],
 				links: [
 					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
 					{href: 'https://github.com/phamduylong/truong-anh-ngok-quotes', text: 'GitHub repository'}
