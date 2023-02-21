@@ -43,9 +43,8 @@
 					<input
 						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
 						name="email"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 						title="A valid email is required!"
-						type="text"
+						type="email"
 						placeholder="john.doe@example.com"
 						required
 					/>
