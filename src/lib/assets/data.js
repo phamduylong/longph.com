@@ -27,7 +27,6 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
-import { to_number } from 'svelte/internal';
 
 const arduino = {
 	img: arduino_img_url,
@@ -161,7 +160,8 @@ const section_datas = [
 				timeline: '2023',
 				content: `An API to generate quotes from Commentator Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. 
 				Quotes will be returned in JSON format on requests (see demo). The server is written with Express, tested with unit tests written in Mocha & Chai 
-				and end-to-end tests with Cypress.<br/><br/>`,
+				and end-to-end tests with Cypress. Thí project is also my first time in touch with a CI-CD pipeline using GitHub Actions. The pipeline with build the project, 
+				run test cases and then trigger a deployment to the hosting site if everything is OK (built successfully and all tests passed).<br/><br/>`,
 				stack: [nodejs, express, javascript, mocha, chai, cypress],
 				links: [
 					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
@@ -227,22 +227,6 @@ const section_datas = [
 						type: 'demo'
 					},
 					{ href: 'https://github.com/phamduylong/FootballRecord', text: 'GitHub repository' }
-				]
-			},
-
-			{
-				title: 'CuteBot',
-				timeline: '2020',
-				content: `A Discord bot to fetch quotes and jokes through an API and send it to Discord server chatboxes. Quotes are fetch from 
-                <a href="https://zenquotes.io" class="underline hover:text-primary-green">ZenQuotes API</a> and jokes are acquired from PyJokes. The chatbot was previously hosted on Heroku 
-                but has gone offline frequently when Heroku dropped their free plans 😥<br/><br/>`,
-				stack: [python],
-				links: [
-					{
-						href: 'https://discord.com/oauth2/authorize?client_id=823841679257763841&permissions=2048&scope=bot',
-						text: 'Invite the bot'
-					},
-					{ href: 'https://github.com/phamduylong/CuteBot', text: 'GitHub repository' }
 				]
 			}
 		]
