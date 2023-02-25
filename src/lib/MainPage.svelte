@@ -1,7 +1,7 @@
 <script>
 	import Section from "./Section.svelte";
 	import { section_datas } from './assets/data.js';
-	import ContactMeTab from "./ContactMeTab.svelte";
+	import ContactMeForm from "./ContactMeForm.svelte";
 </script>
 
 <div id="main">
@@ -14,7 +14,7 @@
 		{#each section_datas as section_data}
 			<Section {section_data}></Section>
 		{/each}
-		<ContactMeTab/>
+		<ContactMeForm/>
 	</div>
 
 	
