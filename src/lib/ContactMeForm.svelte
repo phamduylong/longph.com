@@ -19,7 +19,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
 						name="name"
 						type="text"
 						placeholder="John Doe"
@@ -37,7 +37,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
 						name="email"
 						title="A valid email is required!"
 						type="email"
@@ -54,7 +54,7 @@
 
 				<div class="col-span-6 flex items-center">
 					<textarea
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
 						name="message"
 						placeholder="John Doen't"
 						required
@@ -65,7 +65,7 @@
 					<input
 						type="submit"
 						value="Submit"
-						class="mx-auto w-1/2 md:w-1/12 appearance-none rounded-xl border-2 bg-primary-green py-2 px-4 leading-tight text-black focus:outline-none"
+						class="mx-auto w-1/2 md:w-1/12 appearance-none rounded-xl border-2 bg-primary-green py-2 px-4 leading-tight focus:outline-none"
 					/>
 				</div>
 				<input type="hidden" name="redirectTo" value="https://longph.com">

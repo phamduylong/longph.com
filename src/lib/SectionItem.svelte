@@ -16,6 +16,8 @@
 
 	<div>
 		{@html item.content}
+
+		<!-- Render techology stack if exist-->
 		{#if item.stack !== undefined && item.stack !== []}
 			<div class="stack-container">
 				<b>Tech Stack:</b><br />
@@ -25,6 +27,7 @@
 			</div>
 		{/if}
 
+		<!-- Render media if exist-->
 		{#if item.media !== undefined && item.media !== []}
 			<br /><br />
 			{#each item.media as media}
@@ -47,6 +50,7 @@
 			{/each}
 		{/if}
 
+		<!-- Render hyperlinks-->
 		{#if item.links !== undefined && item.links !== []}
 			<br /><br />
 			{#each item.links as hl}

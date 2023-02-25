@@ -15,8 +15,8 @@
 <style>
 
 	.sidenav {
-		border-left: 0.05vw black solid;
-		border-right: 0.05vw black solid;
+		border-left: 0.05vw solid;
+		border-right: 0.05vw solid;
 		height: 100%;
 		width: 20%;
 		position: fixed;
@@ -32,8 +32,8 @@
 
 	@media screen and (orientation: portrait) {
 		.sidenav {
-			border-left: 0.05vw black solid;
-			border-right: 0.05vw black solid;
+			border-left: 0.05vw solid;
+			border-right: 0.05vw solid;
 			height: 100%;
 			width: 30%;
 			position: fixed;
