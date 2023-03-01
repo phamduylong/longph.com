@@ -98,18 +98,32 @@ const tailwindcss = {
 
 
 const section_datas = [
+
 	{
 		title: 'About',
 		entries: [
 			{
 				title: '',
 				timeline: '',
-				content: `Junior year IT student at Metropolia University Of Applied Sciences. Passionate about Web Development on both front-end and back-end.
-                I have worked with Svelte and SvelteKit mainly on the front-end side (this whole page itself was built with SvelteKit). On the server side of things,
-                I have worked my way through multiple projects with NodeJs and Express framework, with MongoDB being my favorite choice 
-                of database (but I can make use of SQLite if needa be a relational database 😎). On other other hand I also have plenty experiences with Embedded Systems, specifically with 
+				content: `Junior Software Developer & 3rd year IT Student. Passionate about Web Development on both Front-end and Back-end.
+                I have worked with Svelte and SvelteKit mainly on the Front-end side. On the server side of things,
+                I have worked my way through multiple projects with NodeJs and Express framework, with MongoDB being my favorite choice of database 
+				(but I can make use of SQLite if needa be a relational database 😎). On other other hand I also have plenty experiences with Embedded Systems, specifically with 
                 nxp's LPC1549 development board and the Raspberry Pi's Pico W. I have familiarized myself with most important communication protocols: UART, I2C, Modbus RTU, MQTT
                 and can work around them without much problem.`
+			}
+		]
+	},
+
+	{
+		title: 'Work Experiences',
+		entries: [
+			{
+				title: 'Junior Software Developer',
+				timeline: 'Mar 2023 - Present',
+				content: `Currently working as Junior Software Developer at <a href="https://digia.com/en/" target="_blank" rel="external">Digia</a>. 
+				My main responsibilities are to develop and maintain the software according to the clients requirements. Digia is a Finnish IT company 
+				that provides Financial Solutions, hence I'm working with C# and .NET Framework along with Visual Basic.`
 			}
 		]
 	},
@@ -119,8 +133,8 @@ const section_datas = [
 		entries: [
 			{
 				title: 'Metropolia UAS',
-				timeline: 'Aug 2020 - Jul 2024',
-				content: `The largest college (Polytechnic/Ammattikorkeakoulu) there is in Finland. I attended the Information Technology programme 
+				timeline: 'Aug 2020 - Jul 2024 (Expected)',
+				content: `<a href="https://www.metropolia.fi/en" target="_blank" rel="external">Metropolia</a> is the largest college (Polytechnic/Ammattikorkeakoulu) there is in Finland. I attended the Information Technology programme 
                 and have progressed quite well for 3 years so far with a GPA of 4.03/5. My major is Embedded Systems Programming but
                 I'm way more versatile than just an Embedded guy 😉.`
 			}
@@ -232,44 +246,6 @@ const section_datas = [
 		]
 	},
 
-	{
-		title: 'Open Source Contributions',
-		entries: [
-			{
-				title: 'status.pizza',
-				timeline: '2023',
-				content: `Contribution: Managing content and assets, adding new information on the landing page.`,
-				links: [
-					{
-						href: "https://status.pizza/",
-						text: "Project Page"
-					},
-
-					{
-						href: "https://github.com/pweth/status.pizza/pull/4",
-						text: "PR"
-					}
-				]
-			},
-
-			{
-				title: 'ghloc-web',
-				timeline: '2023',
-				content: `Contribution: Fixing anchor href issues`,
-				links: [
-					{
-						href: "https://ghloc.vercel.app/",
-						text: "Project Page"
-					},
-
-					{
-						href: "https://github.com/pajecawav/ghloc-web/pull/19",
-						text: "PR"
-					}
-				]
-			}
-		]
-	}
 ];
 
 const skills = [
