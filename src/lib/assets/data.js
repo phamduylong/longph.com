@@ -119,7 +119,7 @@ const section_datas = [
 		title: 'Work Experiences',
 		entries: [
 			{
-				title: 'Junior Software Developer',
+				title: 'Digia Oyj',
 				timeline: 'Mar 2023 - Present',
 				content: `Currently working as Junior Software Developer at <a href="https://digia.com/en/" target="_blank" rel="external">Digia</a>. 
 				My main responsibilities are to develop and maintain the software according to the clients requirements. Digia is a Finnish IT company 
