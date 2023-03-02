@@ -10,4 +10,4 @@
 	}
 </script>
 
-<button class={classes} on:click={toggleTheme}>{icon}</button>
+<button class={classes} on:click={toggleTheme} tabindex="-1">{icon}</button>
