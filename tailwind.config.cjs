@@ -29,7 +29,7 @@ const config = {
 		}
 	  },
 	  colors: {
-		'coral': "rgb(255, 127, 80)",
+		'coral': "#ff7f50",
 		'primary-green': "#338566"
 	  }
 	},
