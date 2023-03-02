@@ -25,7 +25,6 @@ import nodejs_img_url from '$lib/assets/tech/nodejs.svg';
 import python_img_url from '$lib/assets/tech/python.svg';
 import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
-import sveltekit_img_url from '$lib/assets/tech/sveltekit.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 
 const arduino = {
@@ -89,7 +88,6 @@ const robotframework = {
 	alt: 'Robot Framework Logo'
 };
 const svelte = { img: svelte_img_url, url: 'https://svelte.dev/', alt: 'Svelte Framework Logo' };
-const sveltekit = { img: sveltekit_img_url, url: 'https://kit.svelte.dev/', alt: 'SvelteKit Logo' };
 const tailwindcss = {
 	img: tailwindcss_img_url,
 	url: 'https://tailwindcss.com/',
