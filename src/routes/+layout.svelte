@@ -7,7 +7,6 @@
 {#await theme.init()}
 <div></div>
 {:then}
-	<ThemeSwitch classes="bg-transparent absolute top-1 right-2 text-base md:top-2 md:right-6 md:text-lg lg:top-6 lg:right-10 lg:text-3xl" />
-
+	<ThemeSwitch classes="bg-coral rounded-lg p-0.5 absolute top-2 right-2 text-base md:top-6 md:right-6 md:text-lg lg:rounded-xl lg:text-2xl lg:p-2" />
 	<slot />
 {/await}
