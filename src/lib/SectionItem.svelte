@@ -38,12 +38,14 @@
 						rel="noreferrer"
 						class="underline hover:text-primary-green"
 						>{media.caption}
-						<iframe
-							src={'https://www.youtube.com/embed/' + media.ytid}
-							title="Demo"
-							loading="lazy"
-							allowfullscreen={true}
-						/>
+						<div class="iframe_container">
+							<iframe
+								src={'https://www.youtube.com/embed/' + media.ytid}
+								title="Demo"
+								loading="lazy"
+								allowfullscreen={true}
+							/>
+						</div>
 					</a>
 					<br />
 				{/if}
@@ -61,7 +63,7 @@
 						rel="noreferrer"
 						class="underline hover:text-primary-green"
 						>{hl.text}
-						<iframe src={hl.href} title="Demo" loading="lazy" />
+						<div class="iframe_container"><iframe src={hl.href} title="Demo" loading="lazy" /></div>
 					</a><br />
 				{:else}
 					<a
@@ -94,17 +96,36 @@
 	}
 
 	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		resize: both;
 		border: 5px #338566 solid;
+	}
+
+	.iframe_container {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	}
 
 	@media screen and (orientation: portrait) and (max-width: 960px) {
 		iframe {
 			width: 100%;
-			height: 20vh;
+			height: 100%;
 			border: 1px #338566 solid;
+		}
+
+		.iframe_container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 		}
 	}
 </style>
