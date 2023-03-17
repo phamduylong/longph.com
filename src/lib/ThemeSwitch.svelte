@@ -1,6 +1,6 @@
 <script>
 	export let classes = '';
-	import { theme } from './stores';
+	import { theme } from './stores.js';
 	$: icon = $theme === 'dark' ? '☀️' : '🌙';
 
 
