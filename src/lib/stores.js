@@ -1,20 +1,7 @@
 import { writable } from 'svelte/store';
+import { asyncLocalStorage } from './asyncLocalStorage.js';
 let init_theme;
 const STORAGE_KEY = 'stored-theme';
-
-const asyncLocalStorage = {
-	setItem: async function (key, value) {
-		return Promise.resolve().then(() => {
-			localStorage.setItem(key, value);
-		});
-	},
-
-	getItem: async function(key) {
-		return Promise.resolve().then(() => {
-			return localStorage.getItem(key)
-		})
-	}
-}
 
 function createThemeStore() {
 	const { subscribe, set } = writable( "dark" );
