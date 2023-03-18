@@ -1,16 +1,46 @@
 import { writable } from 'svelte/store';
 import { asyncLocalStorage } from './asyncLocalStorage.js';
-let init_theme;
 const STORAGE_KEY = 'stored-theme';
 
 function createThemeStore() {
-	const { subscribe, set } = writable( "dark" );
+	const { subscribe, set } = writable("dark");
 
 	return {
 		subscribe,
-		init: async () => { init_theme = await asyncLocalStorage.getItem(STORAGE_KEY); set(init_theme); document.firstElementChild.setAttribute('color-scheme', init_theme) },
-		setDarkTheme: async () => {set('dark'); document.firstElementChild.setAttribute('color-scheme', "dark"); await asyncLocalStorage.setItem(STORAGE_KEY, "dark"); },
-		setLightTheme: async () => {set('light'); document.firstElementChild.setAttribute('color-scheme', "light"); await asyncLocalStorage.setItem(STORAGE_KEY, "light");}
+
+		init: async () => {
+			const stored_theme = await asyncLocalStorage.getItem(STORAGE_KEY);
+
+			// Check if the user has a preference already
+			if (stored_theme !== null) {
+				set(stored_theme);
+				document.firstElementChild.setAttribute('color-scheme', stored_theme);
+			}
+
+			// Fallback for first run
+			else {
+				const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+					? "dark"
+					: "light";
+
+				set(preferredTheme);
+				document.firstElementChild.setAttribute('color-scheme', preferredTheme);
+				await asyncLocalStorage.setItem(STORAGE_KEY, preferredTheme);
+			}
+		},
+
+		setDarkTheme: async () => { 
+			set('dark'); 
+			document.firstElementChild.setAttribute('color-scheme', "dark"); 
+			await asyncLocalStorage.setItem(STORAGE_KEY, "dark"); 
+		},
+
+		setLightTheme: async () => { 
+			set('light'); 
+			document.firstElementChild.setAttribute('color-scheme', "light"); 
+			await asyncLocalStorage.setItem(STORAGE_KEY, "light"); 
+		},
+
 	};
 }
 
