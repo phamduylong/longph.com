@@ -4,8 +4,9 @@
 	import { theme } from '$lib/stores';
 </script>
 
+<!-- Theme to be initiated here so that it doesn't flash a theme change before page content loads up -->
 {#await theme.init()}
-<div></div>
+	<span/>
 {:then}
 	<ThemeSwitch classes="bg-coral rounded-lg p-0.5 absolute top-2 right-2 text-base md:top-6 md:right-6 md:text-lg lg:rounded-xl lg:text-2xl lg:p-2" />
 	<slot />
