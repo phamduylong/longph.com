@@ -3,7 +3,7 @@
 	import { slide } from 'svelte/transition';
 	import DeviceDetector from 'svelte-device-detector';
 	import { Popover } from 'svelte-smooth-popover';
-	import spinner from "$lib/assets/loading_gif.gif";
+	import spinner from '$lib/assets/loading_gif.gif';
 	function openPopover() {
 		showPopover = true;
 	}
@@ -39,10 +39,12 @@
 		>
 			<div class="rounded-full bg-primary-green shadow-sm">
 				{#if !loaded}
-					<div class="justify-center items-center flex w-full h-full"><img id="spinner" src={spinner} alt="Loading"></div>
+					<div class="flex h-full w-full items-center justify-center">
+						<img id="spinner" src={spinner} alt="Loading" />
+					</div>
 				{/if}
 				<iframe
-					class="rounded-full p-1 w-full h-full"
+					class="h-full w-full rounded-full p-1"
 					src={tech.url}
 					title={tech.url}
 					on:load={() => {
@@ -52,7 +54,8 @@
 						clearTimeout(hoverIframe);
 					}}
 					on:focus
-					on:mouseleave={closePopover}></iframe>
+					on:mouseleave={closePopover}
+				/>
 			</div>
 		</Popover>
 	</DeviceDetector>
@@ -86,6 +89,4 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-
-
 </style>

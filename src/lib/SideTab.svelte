@@ -13,7 +13,6 @@
 </div>
 
 <style>
-
 	.sidenav {
 		border-left: 0.05vw solid;
 		border-right: 0.05vw solid;
@@ -47,6 +46,4 @@
 			margin-right: 0.25%;
 		}
 	}
-
-
 </style>

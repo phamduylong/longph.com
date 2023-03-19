@@ -6,9 +6,12 @@
 </script>
 
 <div class="skill-items">
-	<DeviceDetector showInDevice="desktop">{skill}<Progressbar {progress} size="h-3" color="green" /></DeviceDetector>
-	<DeviceDetector showInDevice="mobile">{skill}<Progressbar {progress} size="h-1.5" color="green" /></DeviceDetector>
-	
+	<DeviceDetector showInDevice="desktop"
+		>{skill}<Progressbar {progress} size="h-3" color="green" /></DeviceDetector
+	>
+	<DeviceDetector showInDevice="mobile"
+		>{skill}<Progressbar {progress} size="h-1.5" color="green" /></DeviceDetector
+	>
 </div>
 
 <style>

@@ -19,7 +19,7 @@ import ejs_img_url from '$lib/assets/tech/ejs.svg';
 import express_img_url from '$lib/assets/tech/express.svg';
 import html5_img_url from '$lib/assets/tech/html5.svg';
 import javascript_img_url from '$lib/assets/tech/javascript.svg';
-import mocha_img_url from '$lib/assets/tech/mocha.svg'
+import mocha_img_url from '$lib/assets/tech/mocha.svg';
 import mongodb_img_url from '$lib/assets/tech/mongodb.svg';
 import nodejs_img_url from '$lib/assets/tech/nodejs.svg';
 import python_img_url from '$lib/assets/tech/python.svg';
@@ -49,7 +49,7 @@ const cpp = {
 	alt: 'C++ Programming Language Logo'
 };
 const css3 = { img: css3_img_url, url: 'https://en.wikipedia.org/wiki/CSS', alt: 'CSS Logo' };
-const cypress = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo'}
+const cypress = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo' };
 const ejs = { img: ejs_img_url, url: 'https://ejs.co/', alt: 'EJS Template Language Logo' };
 const express = {
 	img: express_img_url,
@@ -70,7 +70,7 @@ const mocha = {
 	img: mocha_img_url,
 	url: 'https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)',
 	alt: 'Mocha Testing Framework'
-}
+};
 const mongodb = {
 	img: mongodb_img_url,
 	url: 'https://en.wikipedia.org/wiki/MongoDB',
@@ -94,9 +94,7 @@ const tailwindcss = {
 	alt: 'Tailwind CSS Logo'
 };
 
-
 const section_datas = [
-
 	{
 		title: 'About',
 		entries: [
@@ -176,8 +174,11 @@ const section_datas = [
 				run test cases and then trigger a deployment to the hosting site if everything is OK (built successfully and all tests passed).<br/><br/>`,
 				stack: [nodejs, express, javascript, mocha, chai, cypress],
 				links: [
-					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App'},
-					{href: 'https://github.com/phamduylong/truong-anh-ngok-quotes', text: 'GitHub repository'}
+					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App' },
+					{
+						href: 'https://github.com/phamduylong/truong-anh-ngok-quotes',
+						text: 'GitHub repository'
+					}
 				]
 			},
 
@@ -242,8 +243,7 @@ const section_datas = [
 				]
 			}
 		]
-	},
-
+	}
 ];
 
 const skills = [

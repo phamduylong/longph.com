@@ -12,7 +12,6 @@
 </div>
 
 <style>
-
 	#contact_section_header {
 		position: absolute;
 		top: 75%;
@@ -37,5 +36,4 @@
 		overflow-x: hidden;
 		padding: 1%;
 	}
-
 </style>

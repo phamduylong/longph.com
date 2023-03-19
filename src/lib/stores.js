@@ -3,7 +3,7 @@ import { asyncLocalStorage } from './asyncLocalStorage.js';
 const STORAGE_KEY = 'stored-theme';
 
 function createThemeStore() {
-	const { subscribe, set } = writable("dark");
+	const { subscribe, set } = writable('dark');
 
 	return {
 		subscribe,
@@ -19,9 +19,9 @@ function createThemeStore() {
 
 			// Fallback for first run
 			else {
-				const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-					? "dark"
-					: "light";
+				const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+					? 'dark'
+					: 'light';
 
 				set(preferredTheme);
 				document.firstElementChild.setAttribute('color-scheme', preferredTheme);
@@ -29,18 +29,17 @@ function createThemeStore() {
 			}
 		},
 
-		setDarkTheme: async () => { 
-			set('dark'); 
-			document.firstElementChild.setAttribute('color-scheme', "dark"); 
-			await asyncLocalStorage.setItem(STORAGE_KEY, "dark"); 
+		setDarkTheme: async () => {
+			set('dark');
+			document.firstElementChild.setAttribute('color-scheme', 'dark');
+			await asyncLocalStorage.setItem(STORAGE_KEY, 'dark');
 		},
 
-		setLightTheme: async () => { 
-			set('light'); 
-			document.firstElementChild.setAttribute('color-scheme', "light"); 
-			await asyncLocalStorage.setItem(STORAGE_KEY, "light"); 
-		},
-
+		setLightTheme: async () => {
+			set('light');
+			document.firstElementChild.setAttribute('color-scheme', 'light');
+			await asyncLocalStorage.setItem(STORAGE_KEY, 'light');
+		}
 	};
 }
 

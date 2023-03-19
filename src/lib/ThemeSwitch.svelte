@@ -3,7 +3,6 @@
 	import { theme } from './stores.js';
 	$: icon = $theme === 'dark' ? '☀️' : '🌙';
 
-
 	async function toggleTheme() {
 		if ($theme === 'dark') await theme.setLightTheme();
 		else await theme.setDarkTheme();

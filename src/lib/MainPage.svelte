@@ -1,7 +1,7 @@
 <script>
-	import Section from "./Section.svelte";
+	import Section from './Section.svelte';
 	import { section_datas } from './assets/data.js';
-	import ContactMeForm from "./ContactMeForm.svelte";
+	import ContactMeForm from './ContactMeForm.svelte';
 </script>
 
 <div id="main">
@@ -12,16 +12,13 @@
 
 	<div id="sections">
 		{#each section_datas as section_data}
-			<Section {section_data}></Section>
+			<Section {section_data} />
 		{/each}
-		<ContactMeForm/>
+		<ContactMeForm />
 	</div>
-
-	
 </div>
 
 <style>
-
 	#main {
 		margin-left: 25%;
 		margin-right: 5%;
@@ -63,7 +60,6 @@
 	}
 
 	@media screen and (orientation: portrait) {
-
 		#intro {
 			position: absolute;
 			top: 25%;
@@ -73,7 +69,6 @@
 			border-top: 5px solid;
 			height: 20%;
 		}
-
 
 		#main {
 			margin-left: 25%;
@@ -92,5 +87,4 @@
 			width: 60%;
 		}
 	}
-
 </style>

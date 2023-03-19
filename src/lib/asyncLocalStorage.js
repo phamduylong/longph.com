@@ -5,11 +5,11 @@ const asyncLocalStorage = {
 		});
 	},
 
-	getItem: async function(key) {
+	getItem: async function (key) {
 		return Promise.resolve().then(() => {
-			return localStorage.getItem(key)
-		})
+			return localStorage.getItem(key);
+		});
 	}
-}
+};
 
 export { asyncLocalStorage };

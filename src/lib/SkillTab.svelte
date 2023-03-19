@@ -3,8 +3,6 @@
 	import { skills } from './assets/data.js';
 </script>
 
-
-
 <strong id="skills_section_header">Skills</strong>
 <div id="skills_container">
 	{#each skills as skill}
@@ -12,10 +10,7 @@
 	{/each}
 </div>
 
-
 <style>
-
-
 	#skills_section_header {
 		position: absolute;
 		top: 35%;
@@ -40,5 +35,4 @@
 		margin-top: 10%;
 		padding: 1%;
 	}
-
 </style>
