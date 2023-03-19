@@ -3,8 +3,7 @@
 		<a class="text-primary-green no-underline" href="#hitmeup">HIT ME UP</a> 👇
 	</h1>
 	<p>
-		I'm actively looking for a Software Development/Testing Role and other opportunities in the IT
-		industry as well. I'd also love to collaborate on/contribute to open source projects. Write to
+		I'm open to collaborate on/contribute to open source projects. Write to
 		me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉
 	</p>
 	<div>
@@ -60,7 +59,7 @@
 					<textarea
 						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
 						name="message"
-						placeholder="John Doen't"
+						placeholder="Mary had a little lamb, its fleece was white as snow..."
 						required
 					/>
 				</div>
