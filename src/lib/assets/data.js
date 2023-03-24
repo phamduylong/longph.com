@@ -186,8 +186,8 @@ const section_datas = [
                 will be measured with Sensirion's SDP600 differential pressure sensor. The idea of the system is to measure surrounding environments attributes, 
                 specifically CO2 level, relative humidity and temperature, then using the collected information as a feedback for the ventilation fan 
                 to adjust power level so as to create the ideal state in terms of air conditions. I contributed to building the back-end server for the project,
-                where we takes data from the physical devices through MQTT, visualize it with Chart.js and creating a User Interface so as to interact with the devices remotely. 
-                One other task that I took on this project was to write automation test cases with Robot Framework and Selenium.<br/><br/>`,
+                where we take data from the physical devices through MQTT, visualize it with Chart.js and creating a User Interface so as to interact with the devices remotely. 
+                Another task that I worked on this project was to write automation test cases with Robot Framework and Selenium.<br/><br/>`,
 				stack: [c, cpp, nodejs, express, ejs, css3, mongodb, chartjs, robotframework],
 				links: [
 					{
@@ -280,7 +280,6 @@ const contact = [
 		url: 'https://stackoverflow.com/users/14126819/pham-long'
 	},
 	{ img: phone_img_url, content: '+35846-888-5062', url: 'tel:+358468885062' },
-	{ img: phone_img_url, content: '+8491-323-0502', url: 'tel:+84913230502' },
 	{
 		img: whatsapp_img_url,
 		content: '+35846-888-5062',
