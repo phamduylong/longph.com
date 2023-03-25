@@ -7,7 +7,7 @@
 		me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉
 	</p>
 	<div>
-		<form action="https://api.staticforms.xyz/submit" method="post" class="my-4">
+		<form autocomplete="off" action="https://api.staticforms.xyz/submit" method="post" class="my-4">
 			<input type="hidden" name="accessKey" value="cb05fe42-31b2-4d6c-8d07-4e45b326a110" />
 			<input type="text" name="honeypot" style="display: none;" />
 
@@ -23,7 +23,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
 						name="name"
 						type="text"
 						placeholder="John Doe"
@@ -40,7 +40,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
 						name="email"
 						title="A valid email is required!"
 						type="email"
@@ -57,7 +57,7 @@
 
 				<div class="col-span-6 flex items-center">
 					<textarea
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
 						name="message"
 						placeholder="Mary had a little lamb, its fleece was white as snow..."
 						required
