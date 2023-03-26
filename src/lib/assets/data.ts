@@ -27,6 +27,7 @@ import python_img_url from '$lib/assets/tech/python.svg';
 import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
+import typescript_img_url from '$lib/assets/tech/typescript.svg';
 
 const c : TechIcon = {
 	img: c_img_url,
@@ -88,6 +89,11 @@ const tailwindcss : TechIcon = {
 	img: tailwindcss_img_url,
 	url: 'https://tailwindcss.com/',
 	alt: 'Tailwind CSS Logo'
+};
+const typescript : TechIcon = {
+	img: typescript_img_url,
+	url: 'https://www.typescriptlang.org/',
+	alt: 'TypeScript Programming Language Logo'
 };
 
 const section_datas : Section[] = [
@@ -156,7 +162,7 @@ const section_datas : Section[] = [
 				content: `My first project with Svelte! All of us have had that "To Do List" project when we first started with front-end development right? I personally don't use 
                 ToDo lists so I thought a Shopping List would be a bit more beneficial. This project was for me to learn the basics front-end concepts: props, event emitting, modules, 
                 libraries, deploying and much more than that.<br/><br/>`,
-				stack: [svelte, html5, css3, tailwindcss, javascript],
+				stack: [svelte, html5, css3, tailwindcss, typescript],
 				links: [
 					{ href: 'https://shopping-list-phamduylong.vercel.app/', text: 'Demo App', type: 'demo' },
 					{ href: 'https://github.com/phamduylong/ShoppingList', text: 'GitHub repository' }
