@@ -1,7 +1,7 @@
-<script>
-	export let img = '',
-		content = 'duy-long-pham',
-		url = 'https://linkedin.com/in/duy-long-pham';
+<script lang="ts">
+	export let img : string = '',
+		content : string = 'duy-long-pham',
+		url : string = 'https://linkedin.com/in/duy-long-pham';
 </script>
 
 <span id="wrapper">

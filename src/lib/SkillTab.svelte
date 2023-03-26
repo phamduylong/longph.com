@@ -1,6 +1,6 @@
 <script>
 	import SkillItem from './SkillItem.svelte';
-	import { skills } from './assets/data.js';
+	import { skills } from './assets/data';
 </script>
 
 <strong id="skills_section_header">Skills</strong>

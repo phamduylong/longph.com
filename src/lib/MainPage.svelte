@@ -1,6 +1,6 @@
 <script>
 	import Section from './Section.svelte';
-	import { section_datas } from './assets/data.js';
+	import { section_datas } from './assets/data';
 	import ContactMeForm from './ContactMeForm.svelte';
 </script>
 

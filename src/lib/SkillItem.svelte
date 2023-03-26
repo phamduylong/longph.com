@@ -1,6 +1,6 @@
 <script>
 	export let skill = '',
-		progress = '';
+		progress = 0;
 	import { Progressbar } from 'flowbite-svelte';
 	import DeviceDetector from 'svelte-device-detector';
 </script>

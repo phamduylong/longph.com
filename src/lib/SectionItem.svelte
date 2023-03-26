@@ -1,6 +1,6 @@
 <script>
 	import TechIcon from './TechIcon.svelte';
-	export let item = { title: '', timeline: '', content: `<p>This is empty :(</p>` };
+	export let item;
 
 	function removeWhitespaces(str) {
 		return str.replace(/\s+/g, '').toLowerCase();
