@@ -1,3 +1,5 @@
+import { TechIcon, Section, SkillItem, ContactItem } from './types';
+
 import linkedin_img_url from '$lib/assets/contact/linkedin.svg';
 import discord_img_url from '$lib/assets/contact/discord.svg';
 import hackerrank_img_url from '$lib/assets/contact/hackerrank.svg';
@@ -26,69 +28,69 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 
-const c = {
+const c : TechIcon = {
 	img: c_img_url,
 	url: 'https://en.cppreference.com/w/c',
 	alt: 'C Programming Language Logo'
 };
-const chai = {
+const chai : TechIcon = {
 	img: chai_img_url,
 	url: 'https://www.chaijs.com/',
 	alt: 'Chai Assertion Library'
 };
-const chartjs = { img: chartjs_img_url, url: 'https://www.chartjs.org/', alt: 'Chart.js Logo' };
-const cpp = {
+const chartjs : TechIcon = { img: chartjs_img_url, url: 'https://www.chartjs.org/', alt: 'Chart.js Logo' };
+const cpp : TechIcon = {
 	img: cpp_img_url,
 	url: 'https://en.cppreference.com/w/',
 	alt: 'C++ Programming Language Logo'
 };
-const css3 = { img: css3_img_url, url: 'https://en.wikipedia.org/wiki/CSS', alt: 'CSS Logo' };
-const cypress = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo' };
-const ejs = { img: ejs_img_url, url: 'https://ejs.co/', alt: 'EJS Template Language Logo' };
-const express = {
+const css3 : TechIcon = { img: css3_img_url, url: 'https://en.wikipedia.org/wiki/CSS', alt: 'CSS Logo' };
+const cypress : TechIcon = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo' };
+const ejs : TechIcon = { img: ejs_img_url, url: 'https://ejs.co/', alt: 'EJS Template Language Logo' };
+const express : TechIcon = {
 	img: express_img_url,
 	url: 'https://expressjs.com/',
 	alt: 'Express Framework Logo'
 };
-const html5 = {
+const html5 : TechIcon = {
 	img: html5_img_url,
 	url: 'https://en.wikipedia.org/wiki/HTML5',
 	alt: 'HTML5 Markup Language Logo'
 };
-const javascript = {
+const javascript : TechIcon = {
 	img: javascript_img_url,
 	url: 'https://en.wikipedia.org/wiki/JavaScript',
 	alt: 'JavaScript Programming Language Logo'
 };
-const mocha = {
+const mocha : TechIcon = {
 	img: mocha_img_url,
 	url: 'https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)',
 	alt: 'Mocha Testing Framework'
 };
-const mongodb = {
+const mongodb : TechIcon = {
 	img: mongodb_img_url,
 	url: 'https://en.wikipedia.org/wiki/MongoDB',
 	alt: 'MongoDB Logo'
 };
-const nodejs = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
-const python = {
+const nodejs : TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
+const python : TechIcon = {
 	img: python_img_url,
 	url: 'https://en.wikipedia.org/wiki/Python_(programming_language)',
 	alt: 'Python Programming Language Logo'
 };
-const robotframework = {
+const robotframework : TechIcon = {
 	img: robotframework_img_url,
 	url: 'https://robotframework.org/',
 	alt: 'Robot Framework Logo'
 };
-const svelte = { img: svelte_img_url, url: 'https://svelte.dev/', alt: 'Svelte Framework Logo' };
-const tailwindcss = {
+const svelte : TechIcon = { img: svelte_img_url, url: 'https://svelte.dev/', alt: 'Svelte Framework Logo' };
+const tailwindcss : TechIcon = {
 	img: tailwindcss_img_url,
 	url: 'https://tailwindcss.com/',
 	alt: 'Tailwind CSS Logo'
 };
 
-const section_datas = [
+const section_datas : Section[] = [
 	{
 		title: 'About',
 		entries: [
@@ -232,29 +234,30 @@ const section_datas = [
 	}
 ];
 
-const skills = [
-	{ skill: 'NodeJs', progress: '70' },
-	{ skill: 'Express', progress: '70' },
-	{ skill: 'EJS Template', progress: '60' },
-	{ skill: 'MongoDB', progress: '50' },
-	{ skill: 'SQL', progress: '50' },
-	{ skill: 'Svelte', progress: '50' },
-	{ skill: 'HTML5', progress: '50' },
-	{ skill: 'CSS3', progress: '40' },
-	{ skill: 'Tailwind CSS', progress: '30' },
-	{ skill: 'Embedded Programming', progress: '50' },
-	{ skill: 'C', progress: '60' },
-	{ skill: 'C++', progress: '70' },
-	{ skill: 'Arduino', progress: '60' },
-	{ skill: 'Python', progress: '60' },
-	{ skill: 'Robot Framework', progress: '50' },
-	{ skill: 'Jenkins', progress: '40' },
-	{ skill: 'Linux', progress: '50' },
-	{ skill: 'Bash', progress: '50' },
-	{ skill: 'Git', progress: '70' }
+const skills : SkillItem[] = [
+	{ skill: 'NodeJs', progress: 70 },
+	{ skill: 'Express', progress: 70 },
+	{ skill: 'EJS Template', progress: 60 },
+	{ skill: 'MongoDB', progress: 50 },
+	{ skill: 'SQL', progress: 50 },
+	{ skill: 'Svelte', progress: 50 },
+	{ skill: 'TypeScript', progress: 40 },
+	{ skill: 'HTML5', progress: 50 },
+	{ skill: 'CSS3', progress: 40 },
+	{ skill: 'Tailwind CSS', progress: 40 },
+	{ skill: 'Embedded Programming', progress: 50 },
+	{ skill: 'C', progress: 60 },
+	{ skill: 'C++', progress: 70 },
+	{ skill: 'Arduino', progress: 60 },
+	{ skill: 'Python', progress: 60 },
+	{ skill: 'Robot Framework', progress: 50 },
+	{ skill: 'Jenkins', progress: 40 },
+	{ skill: 'Linux', progress: 50 },
+	{ skill: 'Bash', progress: 50 },
+	{ skill: 'Git', progress: 70 }
 ];
 
-const contact = [
+const contact : ContactItem[] = [
 	{ img: email_img_url, content: 'longph@metropolia.fi', url: 'mailto:longph@metropolia.fi' },
 	{
 		img: email_img_url,
