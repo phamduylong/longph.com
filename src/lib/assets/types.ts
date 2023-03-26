@@ -1,15 +1,15 @@
-interface TechIcon {
+type TechIcon = {
     img: string,
 	url: string,
 	alt: string
 }
 
-interface Section {
+type Section = {
     title: string,
     entries: SectionItem[]
 }
 
-interface SectionItem {
+type SectionItem = {
     title: string,
     timeline: string,
     content: string,
@@ -18,24 +18,24 @@ interface SectionItem {
     media?: Media[]
 }
 
-interface SectionLink {
+type SectionLink = {
     href: string,
     text: string,
     type?: string
 }
 
-interface Media {
+type Media = {
     ytid: string,
     type: string,
     caption: string
 }
 
-interface SkillItem {
+type SkillItem = {
     skill: string,
     progress: number
 }
 
-interface ContactItem {
+type ContactItem = {
     img: string,
     content: string,
     url: string
