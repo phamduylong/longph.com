@@ -1,18 +1,19 @@
-<script>
-	export let tech = {};
+<script lang="ts">
+	import type { TechIcon } from './assets/types';
+	export let tech : TechIcon = { img: '', alt: '', url: ''};
 	import { slide } from 'svelte/transition';
 	import DeviceDetector from 'svelte-device-detector';
 	import { Popover } from 'svelte-smooth-popover';
 	import spinner from '$lib/assets/loading_gif.gif';
-	function openPopover() {
+	function openPopover() : void {
 		showPopover = true;
 	}
-	function closePopover() {
+	function closePopover() : void {
 		showPopover = false;
 	}
-	let hoverIframe;
-	let loaded = false;
-	let showPopover = false;
+	let hoverIframe : NodeJS.Timeout;
+	let loaded : boolean = false;
+	let showPopover : boolean = false;
 </script>
 
 <a href={tech.url} target="_blank" rel="noreferrer">
