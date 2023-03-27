@@ -1,4 +1,4 @@
-import { TechIcon, Section, SkillItem, ContactItem } from './types';
+import type { TechIcon, Section, SkillItem, ContactItem } from './types';
 
 import linkedin_img_url from '$lib/assets/contact/linkedin.svg';
 import discord_img_url from '$lib/assets/contact/discord.svg';
