@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
+	import type { SectionItem } from './assets/types';
 	import TechIcon from './TechIcon.svelte';
-	export let item;
+	export let item : SectionItem;
 
-	function removeWhitespaces(str) {
+	function removeWhitespaces(str : string) : string {
 		return str.replace(/\s+/g, '').toLowerCase();
 	}
 </script>
@@ -18,17 +19,17 @@
 		{@html item.content}
 
 		<!-- Render techology stack if exist-->
-		{#if item.stack !== undefined && item.stack !== []}
+		{#if item.stack !== undefined}
 			<div class="stack-container">
 				<b>Tech Stack:</b><br />
 				{#each item.stack as tech}
-					<TechIcon parentSection={item.title} {tech} />
+					<TechIcon {tech} />
 				{/each}
 			</div>
 		{/if}
 
 		<!-- Render media if exist-->
-		{#if item.media !== undefined && item.media !== []}
+		{#if item.media !== undefined}
 			<br /><br />
 			{#each item.media as media}
 				{#if media.type === 'youtube'}
@@ -53,7 +54,7 @@
 		{/if}
 
 		<!-- Render hyperlinks-->
-		{#if item.links !== undefined && item.links !== []}
+		{#if item.links !== undefined}
 			<br /><br />
 			{#each item.links as hl}
 				{#if hl.type === 'demo'}

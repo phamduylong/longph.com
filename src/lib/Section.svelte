@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Section } from './assets/types';
+	import type { Section } from './assets/types';
 	import SectionItem from './SectionItem.svelte';
 	export let section_data : Section;
 
-	function removeWhitespaces(str : string) {
+	function removeWhitespaces(str : string) : string {
 		return str.replace(/\s+/g, '').toLowerCase();
 	}
 </script>
