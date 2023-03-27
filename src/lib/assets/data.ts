@@ -51,7 +51,7 @@ const cpp: TechIcon = {
 };
 const css3: TechIcon = {
 	img: css3_img_url,
-	url: 'https://en.wikipedia.org/wiki/CSS',
+	url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
 	alt: 'CSS Logo'
 };
 const cypress: TechIcon = {
@@ -71,28 +71,28 @@ const express: TechIcon = {
 };
 const html5: TechIcon = {
 	img: html5_img_url,
-	url: 'https://en.wikipedia.org/wiki/HTML5',
+	url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
 	alt: 'HTML5 Markup Language Logo'
 };
 const javascript: TechIcon = {
 	img: javascript_img_url,
-	url: 'https://en.wikipedia.org/wiki/JavaScript',
+	url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 	alt: 'JavaScript Programming Language Logo'
 };
 const mocha: TechIcon = {
 	img: mocha_img_url,
-	url: 'https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)',
+	url: 'https://mochajs.org/',
 	alt: 'Mocha Testing Framework'
 };
 const mongodb: TechIcon = {
 	img: mongodb_img_url,
-	url: 'https://en.wikipedia.org/wiki/MongoDB',
+	url: 'https://www.mongodb.com/',
 	alt: 'MongoDB Logo'
 };
 const nodejs: TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
 const python: TechIcon = {
 	img: python_img_url,
-	url: 'https://en.wikipedia.org/wiki/Python_(programming_language)',
+	url: 'https://www.python.org/',
 	alt: 'Python Programming Language Logo'
 };
 const robotframework: TechIcon = {
