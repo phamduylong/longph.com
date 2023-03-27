@@ -7,7 +7,7 @@
 
 <div id="contact_container">
 	{#each contact as contact}
-		<ContactItem { contact } />
+		<ContactItem {contact} />
 	{/each}
 </div>
 
