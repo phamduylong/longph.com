@@ -1,17 +1,19 @@
-<script>
-	export let skill = '',
-		progress = 0;
-	import { Progressbar } from 'flowbite-svelte';
+<script lang="ts">
+	import type { SkillItem } from './assets/types';
+	import { Progressbar } from 'flowbite-svelte'
 	import DeviceDetector from 'svelte-device-detector';
+	export let skill : SkillItem = {skill: '', progress: 0};
 </script>
 
+
 <div class="skill-items">
-	<DeviceDetector showInDevice="desktop"
-		>{skill}<Progressbar {progress} size="h-3" color="green" /></DeviceDetector
-	>
-	<DeviceDetector showInDevice="mobile"
-		>{skill}<Progressbar {progress} size="h-1.5" color="green" /></DeviceDetector
-	>
+	<DeviceDetector showInDevice="desktop">
+		{skill.skill}<Progressbar progress:{ skill.progress } size="h-3" color="green" />
+	</DeviceDetector>
+
+	<DeviceDetector showInDevice="mobile">
+		{ skill.skill }<Progressbar progress:{ skill.progress } size="h-1.5" color="green" />
+	</DeviceDetector>
 </div>
 
 <style>

@@ -7,7 +7,7 @@
 
 <div id="contact_container">
 	{#each contact as contact}
-		<ContactItem img={contact.img} content={contact.content} url={contact.url} />
+		<ContactItem { contact } />
 	{/each}
 </div>
 

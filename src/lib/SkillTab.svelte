@@ -6,7 +6,7 @@
 <strong id="skills_section_header">Skills</strong>
 <div id="skills_container">
 	{#each skills as skill}
-		<SkillItem skill={skill.skill} progress={skill.progress} />
+		<SkillItem { skill } />
 	{/each}
 </div>
 
