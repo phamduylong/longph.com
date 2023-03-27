@@ -4,7 +4,7 @@
 </script>
 
 <span id="wrapper">
-	<a href={contact.url} target="blank" class="inline-block w-fit text-primary-green"
+	<a href={contact.url} target="blank" class="inline-block w-fit"
 		><img src={contact.img} alt="duy-long-pham" />
 		<p class="inline-block font-semibold lg:hover:underline">{contact.content}</p>
 	</a>
