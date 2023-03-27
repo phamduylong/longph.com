@@ -29,74 +29,94 @@ import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 import typescript_img_url from '$lib/assets/tech/typescript.svg';
 
-const c : TechIcon = {
+const c: TechIcon = {
 	img: c_img_url,
 	url: 'https://en.cppreference.com/w/c',
 	alt: 'C Programming Language Logo'
 };
-const chai : TechIcon = {
+const chai: TechIcon = {
 	img: chai_img_url,
 	url: 'https://www.chaijs.com/',
 	alt: 'Chai Assertion Library'
 };
-const chartjs : TechIcon = { img: chartjs_img_url, url: 'https://www.chartjs.org/', alt: 'Chart.js Logo' };
-const cpp : TechIcon = {
+const chartjs: TechIcon = {
+	img: chartjs_img_url,
+	url: 'https://www.chartjs.org/',
+	alt: 'Chart.js Logo'
+};
+const cpp: TechIcon = {
 	img: cpp_img_url,
 	url: 'https://en.cppreference.com/w/',
 	alt: 'C++ Programming Language Logo'
 };
-const css3 : TechIcon = { img: css3_img_url, url: 'https://en.wikipedia.org/wiki/CSS', alt: 'CSS Logo' };
-const cypress : TechIcon = { img: cypress_img_url, url: 'https://www.cypress.io/', alt: 'Cypress Logo' };
-const ejs : TechIcon = { img: ejs_img_url, url: 'https://ejs.co/', alt: 'EJS Template Language Logo' };
-const express : TechIcon = {
+const css3: TechIcon = {
+	img: css3_img_url,
+	url: 'https://en.wikipedia.org/wiki/CSS',
+	alt: 'CSS Logo'
+};
+const cypress: TechIcon = {
+	img: cypress_img_url,
+	url: 'https://www.cypress.io/',
+	alt: 'Cypress Logo'
+};
+const ejs: TechIcon = {
+	img: ejs_img_url,
+	url: 'https://ejs.co/',
+	alt: 'EJS Template Language Logo'
+};
+const express: TechIcon = {
 	img: express_img_url,
 	url: 'https://expressjs.com/',
 	alt: 'Express Framework Logo'
 };
-const html5 : TechIcon = {
+const html5: TechIcon = {
 	img: html5_img_url,
 	url: 'https://en.wikipedia.org/wiki/HTML5',
 	alt: 'HTML5 Markup Language Logo'
 };
-const javascript : TechIcon = {
+const javascript: TechIcon = {
 	img: javascript_img_url,
 	url: 'https://en.wikipedia.org/wiki/JavaScript',
 	alt: 'JavaScript Programming Language Logo'
 };
-const mocha : TechIcon = {
+const mocha: TechIcon = {
 	img: mocha_img_url,
 	url: 'https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)',
 	alt: 'Mocha Testing Framework'
 };
-const mongodb : TechIcon = {
+const mongodb: TechIcon = {
 	img: mongodb_img_url,
 	url: 'https://en.wikipedia.org/wiki/MongoDB',
 	alt: 'MongoDB Logo'
 };
-const nodejs : TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
-const python : TechIcon = {
+const nodejs: TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
+const python: TechIcon = {
 	img: python_img_url,
 	url: 'https://en.wikipedia.org/wiki/Python_(programming_language)',
 	alt: 'Python Programming Language Logo'
 };
-const robotframework : TechIcon = {
+const robotframework: TechIcon = {
 	img: robotframework_img_url,
 	url: 'https://robotframework.org/',
 	alt: 'Robot Framework Logo'
 };
-const svelte : TechIcon = { img: svelte_img_url, url: 'https://svelte.dev/', alt: 'Svelte Framework Logo' };
-const tailwindcss : TechIcon = {
+const svelte: TechIcon = {
+	img: svelte_img_url,
+	url: 'https://svelte.dev/',
+	alt: 'Svelte Framework Logo'
+};
+const tailwindcss: TechIcon = {
 	img: tailwindcss_img_url,
 	url: 'https://tailwindcss.com/',
 	alt: 'Tailwind CSS Logo'
 };
-const typescript : TechIcon = {
+const typescript: TechIcon = {
 	img: typescript_img_url,
 	url: 'https://www.typescriptlang.org/',
 	alt: 'TypeScript Programming Language Logo'
 };
 
-const section_datas : Section[] = [
+const section_datas: Section[] = [
 	{
 		title: 'About',
 		entries: [
@@ -105,7 +125,7 @@ const section_datas : Section[] = [
 				timeline: '',
 				content: `I'm a Junior Software Developer & 3rd year IT Student based in Espoo, Finland. Passionate about most areas of Software Development, 
 				from Desktop application to Web APIs and Front-end components, I am always looking for new challenges and opportunities to learn new things 🤓
-				You can write to me using the <a href="#hitmeup" target="_self" rel="internal">form</a> at the end of this page 👇` 
+				You can write to me using the <a href="#hitmeup" target="_self" rel="internal">form</a> at the end of this page 👇`
 			}
 		]
 	},
@@ -240,7 +260,7 @@ const section_datas : Section[] = [
 	}
 ];
 
-const skills : SkillItem[] = [
+const skills: SkillItem[] = [
 	{ skill: 'NodeJs', progress: 70 },
 	{ skill: 'Express', progress: 70 },
 	{ skill: 'EJS Template', progress: 60 },
@@ -263,7 +283,7 @@ const skills : SkillItem[] = [
 	{ skill: 'Git', progress: 70 }
 ];
 
-const contact : ContactItem[] = [
+const contact: ContactItem[] = [
 	{ img: email_img_url, content: 'longph@metropolia.fi', url: 'mailto:longph@metropolia.fi' },
 	{
 		img: email_img_url,

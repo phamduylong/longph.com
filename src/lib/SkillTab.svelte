@@ -6,7 +6,7 @@
 <strong id="skills_section_header">Skills</strong>
 <div id="skills_container">
 	{#each skills as skill}
-		<SkillItem { skill } />
+		<SkillItem {skill} />
 	{/each}
 </div>
 

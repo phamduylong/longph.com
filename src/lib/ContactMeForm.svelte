@@ -3,8 +3,8 @@
 		<a class="text-primary-green no-underline" href="#hitmeup">HIT ME UP</a> 👇
 	</h1>
 	<p>
-		I'm open to collaborate on/contribute to open source projects. Write to
-		me and I'll reply, usually within 48 hours. Looking forward to hearing from you 😉
+		I'm open to collaborate on/contribute to open source projects. Write to me and I'll reply,
+		usually within 48 hours. Looking forward to hearing from you 😉
 	</p>
 	<div>
 		<form autocomplete="off" action="https://api.staticforms.xyz/submit" method="post" class="my-4">
@@ -23,7 +23,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
 						name="name"
 						type="text"
 						placeholder="John Doe"
@@ -40,7 +40,7 @@
 				<div class="col-span-6 flex items-center">
 					<!-- Grid cell -->
 					<input
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
 						name="email"
 						title="A valid email is required!"
 						type="email"
@@ -57,7 +57,7 @@
 
 				<div class="col-span-6 flex items-center">
 					<textarea
-						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight focus:border-primary-green focus:bg-white focus:outline-none text-black"
+						class="w-full appearance-none rounded border-2 py-2 px-4 leading-tight text-black focus:border-primary-green focus:bg-white focus:outline-none"
 						name="message"
 						placeholder="Mary had a little lamb, its fleece was white as snow..."
 						required

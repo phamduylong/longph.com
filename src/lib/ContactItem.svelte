@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ContactItem } from './assets/types';
-	export let contact : ContactItem = {img: '', content: '', url: ''};
+	export let contact: ContactItem = { img: '', content: '', url: '' };
 </script>
 
 <span id="wrapper">
