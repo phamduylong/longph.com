@@ -1,9 +1,10 @@
-import { writable, Writable } from 'svelte/store';
+import { writable } from 'svelte/store';
+import type { Writable } from 'svelte/store';
 import { asyncLocalStorage } from './assets/asyncLocalStorage';
 const STORAGE_KEY: string = 'stored-theme';
 
 function createThemeStore() {
-	const { subscribe, set }: Writable<string> = writable('dark');
+	const { subscribe, set } : Writable<string> = writable('dark');
 
 	return {
 		subscribe,
