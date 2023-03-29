@@ -28,92 +28,110 @@ import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 import typescript_img_url from '$lib/assets/tech/typescript.svg';
+import { text } from 'svelte/internal';
 
 const c: TechIcon = {
 	img: c_img_url,
 	url: 'https://en.cppreference.com/w/c',
-	alt: 'C Programming Language Logo'
+	alt: 'C Programming Language Logo',
+	text: 'C'
 };
 const chai: TechIcon = {
 	img: chai_img_url,
 	url: 'https://www.chaijs.com/',
-	alt: 'Chai Assertion Library'
+	alt: 'Chai Assertion Library',
+	text: 'Chai Assertion Library'
 };
 const chartjs: TechIcon = {
 	img: chartjs_img_url,
 	url: 'https://www.chartjs.org/',
-	alt: 'Chart.js Logo'
+	alt: 'Chart.js Logo',
+	text: 'Chart.js'
 };
 const cpp: TechIcon = {
 	img: cpp_img_url,
 	url: 'https://en.cppreference.com/w/',
-	alt: 'C++ Programming Language Logo'
+	alt: 'C++ Programming Language Logo',
+	text: 'C++'
 };
 const css3: TechIcon = {
 	img: css3_img_url,
 	url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-	alt: 'CSS Logo'
+	alt: 'CSS Logo',
+	text: 'CSS'
 };
 const cypress: TechIcon = {
 	img: cypress_img_url,
 	url: 'https://www.cypress.io/',
-	alt: 'Cypress Logo'
+	alt: 'Cypress Logo',
+	text: 'Cypress Testing Framework'
 };
 const ejs: TechIcon = {
 	img: ejs_img_url,
 	url: 'https://ejs.co/',
-	alt: 'EJS Template Language Logo'
+	alt: 'EJS Template Language Logo',
+	text: 'EJS Template Language'
 };
 const express: TechIcon = {
 	img: express_img_url,
 	url: 'https://expressjs.com/',
-	alt: 'Express Framework Logo'
+	alt: 'Express Framework Logo',
+	text: 'Express Framework'
 };
 const html5: TechIcon = {
 	img: html5_img_url,
 	url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-	alt: 'HTML5 Markup Language Logo'
+	alt: 'HTML5 Markup Language Logo',
+	text: 'HTML'
 };
 const javascript: TechIcon = {
 	img: javascript_img_url,
 	url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-	alt: 'JavaScript Programming Language Logo'
+	alt: 'JavaScript Programming Language Logo',
+	text: 'JavaScript'
 };
 const mocha: TechIcon = {
 	img: mocha_img_url,
 	url: 'https://mochajs.org/',
-	alt: 'Mocha Testing Framework'
+	alt: 'Mocha Testing Framework',
+	text: 'Mocha Testing Framework'
 };
 const mongodb: TechIcon = {
 	img: mongodb_img_url,
 	url: 'https://www.mongodb.com/',
-	alt: 'MongoDB Logo'
+	alt: 'MongoDB Logo',
+	text: 'MongoDB'
 };
-const nodejs: TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo' };
+const nodejs: TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo', text: 'NodeJs' };
 const python: TechIcon = {
 	img: python_img_url,
 	url: 'https://www.python.org/',
-	alt: 'Python Programming Language Logo'
+	alt: 'Python Programming Language Logo',
+	text: 'Python'
 };
 const robotframework: TechIcon = {
 	img: robotframework_img_url,
 	url: 'https://robotframework.org/',
-	alt: 'Robot Framework Logo'
+	alt: 'Robot Framework Logo',
+	text: 'Robot Framework'
 };
 const svelte: TechIcon = {
 	img: svelte_img_url,
 	url: 'https://svelte.dev/',
-	alt: 'Svelte Framework Logo'
+	alt: 'Svelte Framework Logo',
+	text: 'Svelte Framework'
 };
 const tailwindcss: TechIcon = {
 	img: tailwindcss_img_url,
 	url: 'https://tailwindcss.com/',
-	alt: 'Tailwind CSS Logo'
+	alt: 'Tailwind CSS Logo',
+	text: 'Tailwind CSS'
 };
 const typescript: TechIcon = {
 	img: typescript_img_url,
 	url: 'https://www.typescriptlang.org/',
-	alt: 'TypeScript Programming Language Logo'
+	alt: 'TypeScript Programming Language Logo',
+	text: 'TypeScript'
 };
 
 const section_datas: Section[] = [
