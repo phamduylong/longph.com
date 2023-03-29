@@ -2,6 +2,7 @@ type TechIcon = {
 	img: string;
 	url: string;
 	alt: string;
+	text: string;
 };
 
 type Section = {

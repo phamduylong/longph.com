@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { TechIcon } from './assets/types';
-	export let tech: TechIcon = { img: '', alt: '', url: '' };
+	export let tech: TechIcon = { img: '', alt: '', url: '', text: '' };
 </script>
 
-<a href={tech.url} target="_blank" rel="noreferrer">
+<a href={tech.url} target="_blank" rel="noreferrer" title={tech.text}>
 	<img src={tech.img} alt={tech.alt} class="tech-item" />
 </a>
 
