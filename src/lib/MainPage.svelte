@@ -4,10 +4,10 @@
 	import ContactMeForm from './ContactMeForm.svelte';
 </script>
 
-<div id="main">
+<div class="ml-1/4 mr-1/20 overflow-scroll overflow-x-hidden">
 	<div id="intro">
-		<div id="name">Long Pham</div>
-		<div id="title">Junior Developer</div>
+		<div class="absolute -top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-4vw">Long Pham</div>
+		<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2vw">Junior Developer</div>
 	</div>
 
 	<div id="sections">
@@ -19,18 +19,6 @@
 </div>
 
 <style>
-	#main {
-		margin-left: 25%;
-		margin-right: 5%;
-	}
-
-	#name {
-		position: absolute;
-		top: -40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 4vw;
-	}
 
 	#intro {
 		position: absolute;
@@ -40,14 +28,6 @@
 		transform: translate(-30%, -50%);
 		border-top: 5px solid;
 		height: 20%;
-	}
-
-	#title {
-		position: absolute;
-		top: 25%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 2vw;
 	}
 
 	#sections {
@@ -68,13 +48,6 @@
 			transform: translate(-15%, -50%);
 			border-top: 5px solid;
 			height: 20%;
-		}
-
-		#main {
-			margin-left: 25%;
-			margin-right: 5%;
-			overflow: scroll;
-			overflow-x: hidden;
 		}
 
 		#sections {

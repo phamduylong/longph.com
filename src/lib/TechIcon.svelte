@@ -3,27 +3,6 @@
 	export let tech: TechIcon = { img: '', alt: '', url: '', text: '' };
 </script>
 
-<a href={tech.url} target="_blank" rel="noreferrer" title={tech.text}>
-	<img src={tech.img} alt={tech.alt} class="tech-item" />
+<a href={tech.url} target="_blank" rel="noreferrer" title={tech.text} class="text-[0]">
+	<img src={tech.img} alt={tech.alt} class="inline-block h-[5%] w-[5%] mx-1/100 mt-[2%] hover:mx-1/50 hover:scale-150" />
 </a>
-
-<style>
-	.tech-item {
-		display: inline-block;
-		height: 5%;
-		width: 5%;
-		margin-left: 1%;
-		margin-right: 1%;
-		margin-top: 2%;
-	}
-
-	.tech-item:hover {
-		transform: scale(1.5);
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-
-	a {
-		font-size: 0;
-	}
-</style>

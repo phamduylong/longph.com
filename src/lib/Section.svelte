@@ -8,9 +8,9 @@
 	}
 </script>
 
-<div id="wrapper">
+<div id="wrapper" class="text-3vw m-1/10 p-1/100">
 	<p id={removeWhitespaces(section_data.title)}>
-		<a class="text-primary-green no-underline" href={'#' + removeWhitespaces(section_data.title)}
+		<a class="text-primary-green" href={'#' + removeWhitespaces(section_data.title)}
 			>{section_data.title.toUpperCase()}</a
 		>
 	</p>
@@ -18,11 +18,3 @@
 		<SectionItem {item} />
 	{/each}
 </div>
-
-<style>
-	#wrapper {
-		font-size: 3vw;
-		margin: 10%;
-		padding: 1%;
-	}
-</style>

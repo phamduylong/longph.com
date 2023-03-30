@@ -1,6 +1,6 @@
 <div id="wrapper" class="m-1/10 p-1/100">
 	<h1 id="hitmeup" class="place-self-center">
-		<a class="text-primary-green no-underline" href="#hitmeup">HIT ME UP</a> 👇
+		<a class="text-primary-green" href="#hitmeup">HIT ME UP</a> 👇
 	</h1>
 	<p>
 		I'm open to collaborate on/contribute to open source projects. Write to me and I'll reply,
