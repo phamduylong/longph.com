@@ -22,8 +22,13 @@ type SectionItem = {
 type SectionLink = {
 	href: string;
 	text: string;
-	type?: string;
+	type: LinkType;
 };
+
+enum LinkType {
+	Demo,
+	GitRepo
+}
 
 type Media = {
 	ytid: string;
@@ -42,4 +47,4 @@ type ContactItem = {
 	url: string;
 };
 
-export { TechIcon, Section, SectionItem, SectionLink, Media, SkillItem, ContactItem };
+export { TechIcon, Section, SectionItem, SectionLink, Media, SkillItem, ContactItem, LinkType };

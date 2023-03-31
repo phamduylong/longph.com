@@ -1,4 +1,5 @@
 import type { TechIcon, Section, SkillItem, ContactItem } from './types';
+import { LinkType } from './types';
 
 import linkedin_img_url from '$lib/assets/contact/linkedin.svg';
 import discord_img_url from '$lib/assets/contact/discord.svg';
@@ -189,8 +190,8 @@ const section_datas: Section[] = [
 				or click the roll button below the quote 🔃<br/><br/>`,
 				stack: [svelte, html5, css3, tailwindcss, javascript],
 				links: [
-					{ href: 'https://random-netflix-quotes.vercel.app/', text: 'Demo App', type: 'demo' },
-					{ href: 'https://github.com/phamduylong/RandomNetflixQuotes', text: 'GitHub repository' }
+					{ href: 'https://random-netflix-quotes.vercel.app/', text: 'Demo App', type: LinkType.Demo },
+					{ href: 'https://github.com/phamduylong/RandomNetflixQuotes', text: 'GitHub repository', type: LinkType.GitRepo }
 				]
 			},
 
@@ -202,8 +203,8 @@ const section_datas: Section[] = [
                 libraries, deploying and much more than that.<br/><br/>`,
 				stack: [svelte, html5, css3, tailwindcss, typescript],
 				links: [
-					{ href: 'https://shopping-list-phamduylong.vercel.app/', text: 'Demo App', type: 'demo' },
-					{ href: 'https://github.com/phamduylong/ShoppingList', text: 'GitHub repository' }
+					{ href: 'https://shopping-list-phamduylong.vercel.app/', text: 'Demo App', type: LinkType.Demo },
+					{ href: 'https://github.com/phamduylong/ShoppingList', text: 'GitHub repository', type: LinkType.GitRepo }
 				]
 			},
 
@@ -212,14 +213,20 @@ const section_datas: Section[] = [
 				timeline: '2023',
 				content: `An API to generate quotes from Commentator Anh Ngoc Truong (The only Vietnamese journalist to vote for Ballon d'Or). Request limit is 10000 requests/day. 
 				Quotes will be returned in JSON format on requests (see demo). The server is written with Express, tested with unit tests written in Mocha & Chai 
-				and end-to-end tests with Cypress. Thí project is also my first time in touch with a CI-CD pipeline using GitHub Actions. The pipeline with build the project, 
+				and end-to-end tests with Cypress. This project is also my first time in touch with a CI-CD pipeline using GitHub Actions. The pipeline with build the project, 
 				run test cases and then trigger a deployment to the hosting site if everything is OK (built successfully and all tests passed).<br/><br/>`,
 				stack: [nodejs, express, javascript, mocha, chai, cypress],
 				links: [
-					{ href: 'https://blv-anh-ngok-said.onrender.com/', text: 'Demo App' },
+					{
+						href: 'https://blv-anh-ngok-said.onrender.com',
+						text: 'Demo API',
+						type: LinkType.Demo
+					},
+
 					{
 						href: 'https://github.com/phamduylong/truong-anh-ngok-quotes',
-						text: 'GitHub repository'
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
 					}
 				]
 			},
@@ -238,7 +245,8 @@ const section_datas: Section[] = [
 				links: [
 					{
 						href: 'https://github.com/phamduylong/abb-ventilation-controller',
-						text: 'GitHub repository'
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
 					}
 				]
 			},
@@ -253,7 +261,8 @@ const section_datas: Section[] = [
 				links: [
 					{
 						href: 'https://github.com/IoT-project-groups-1-2/g2-voice-controller',
-						text: 'GitHub repository'
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
 					}
 				],
 				media: [{ ytid: 'tQpu81TbtpA', type: 'youtube', caption: 'Demo Video' }]
@@ -269,9 +278,9 @@ const section_datas: Section[] = [
 					{
 						href: 'https://replit.com/@PhamLong1/FootballRecord?embed=true',
 						text: 'Repl',
-						type: 'demo'
+						type: LinkType.Demo
 					},
-					{ href: 'https://github.com/phamduylong/FootballRecord', text: 'GitHub repository' }
+					{ href: 'https://github.com/phamduylong/FootballRecord', text: 'GitHub repository', type: LinkType.GitRepo }
 				]
 			}
 		]

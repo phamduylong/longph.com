@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { SectionItem } from './assets/types';
+	import { LinkType } from './assets/types';
 	import TechIcon from './TechIcon.svelte';
 	export let item: SectionItem;
 
@@ -58,7 +59,7 @@
 		{#if item.links !== undefined}
 			<br /><br />
 			{#each item.links as hl}
-				{#if hl.type === 'demo'}
+				{#if hl.type === LinkType.Demo}
 					<a
 						href={hl.href}
 						target="_blank"
@@ -68,7 +69,7 @@
 						<div class="relative overflow-hidden w-full lg:pt-[56.25%]"><iframe src={hl.href} title="Demo" loading="lazy" 
 							class="w-full h-full border border-solid border-primary-green resize lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 lg:border-[4px]"/></div>
 					</a><br />
-				{:else}
+				{:else if hl.type === LinkType.GitRepo}
 					<a
 						href={hl.href}
 						target="_blank"
