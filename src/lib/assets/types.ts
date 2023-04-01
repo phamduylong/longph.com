@@ -33,7 +33,7 @@ enum LinkType {
 type Media = {
 	ytid: string;
 	type: string;
-	caption: string;
+	text: string;
 };
 
 type SkillItem = {
