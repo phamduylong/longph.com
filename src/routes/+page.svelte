@@ -1,6 +1,6 @@
-<script>
-	import SideTab from '../lib/SideTab.svelte';
-	import MainPage from '../lib/MainPage.svelte';
+<script lang="ts">
+	import SideTab from '../lib/components/SideTab.svelte';
+	import MainPage from '../lib/components/MainPage.svelte';
 	import SvelteSeo from 'svelte-seo';
 	import 'agnostic-svelte/css/common.min.css';
 </script>
