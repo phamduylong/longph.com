@@ -15,25 +15,28 @@ import c_img_url from '$lib/assets/tech/c.svg';
 import chai_img_url from '$lib/assets/tech/chai.svg';
 import chartjs_img_url from '$lib/assets/tech/chartjs.svg';
 import cpp_img_url from '$lib/assets/tech/cpp.svg';
+import c_sharp_img_url from '$lib/assets/tech/csharp.svg';
 import css3_img_url from '$lib/assets/tech/css3.svg';
 import cypress_img_url from '$lib/assets/tech/cypress.svg';
 import ejs_img_url from '$lib/assets/tech/ejs.svg';
 import express_img_url from '$lib/assets/tech/express.svg';
 import html5_img_url from '$lib/assets/tech/html5.svg';
 import javascript_img_url from '$lib/assets/tech/javascript.svg';
+import jquery_img_url from '$lib/assets/tech/jquery.svg';
 import mocha_img_url from '$lib/assets/tech/mocha.svg';
 import mongodb_img_url from '$lib/assets/tech/mongodb.svg';
 import nodejs_img_url from '$lib/assets/tech/nodejs.svg';
 import python_img_url from '$lib/assets/tech/python.svg';
 import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
+import sqldb_img_url from '$lib/assets/tech/sqldb.svg';
 import svelte_img_url from '$lib/assets/tech/svelte.svg';
 import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 import typescript_img_url from '$lib/assets/tech/typescript.svg';
-import { text } from 'svelte/internal';
+import visualbasic_img_url from '$lib/assets/tech/visualbasic.svg';
 
 const c: TechIcon = {
 	img: c_img_url,
-	url: 'https://en.cppreference.com/w/c',
+	url: 'https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html',
 	alt: 'C Programming Language Logo',
 	text: 'C'
 };
@@ -51,9 +54,15 @@ const chartjs: TechIcon = {
 };
 const cpp: TechIcon = {
 	img: cpp_img_url,
-	url: 'https://en.cppreference.com/w/',
+	url: 'https://cplusplus.com/',
 	alt: 'C++ Programming Language Logo',
 	text: 'C++'
+};
+const csharp: TechIcon = {
+	img: c_sharp_img_url,
+	url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+	alt: 'C# Programming Language Logo',
+	text: 'C#'
 };
 const css3: TechIcon = {
 	img: css3_img_url,
@@ -91,6 +100,12 @@ const javascript: TechIcon = {
 	alt: 'JavaScript Programming Language Logo',
 	text: 'JavaScript'
 };
+const jquery: TechIcon = {
+	img: jquery_img_url,
+	url: 'https://jquery.com/',
+	alt: 'JQuery Logo',
+	text: 'JQuery'
+};
 const mocha: TechIcon = {
 	img: mocha_img_url,
 	url: 'https://mochajs.org/',
@@ -116,6 +131,12 @@ const robotframework: TechIcon = {
 	alt: 'Robot Framework Logo',
 	text: 'Robot Framework'
 };
+const sqldb: TechIcon = {
+	img: sqldb_img_url,
+	url: 'https://www.microsoft.com/en-us/sql-server/',
+	alt: 'SQL Database Logo',
+	text: 'SQL Database'
+};
 const svelte: TechIcon = {
 	img: svelte_img_url,
 	url: 'https://svelte.dev/',
@@ -133,6 +154,12 @@ const typescript: TechIcon = {
 	url: 'https://www.typescriptlang.org/',
 	alt: 'TypeScript Programming Language Logo',
 	text: 'TypeScript'
+};
+const visualbasic: TechIcon = {
+	img: visualbasic_img_url,
+	url: 'https://docs.microsoft.com/en-us/dotnet/visual-basic/',
+	alt: 'Visual Basic Programming Language Logo',
+	text: 'Visual Basic'
 };
 
 const section_datas: Section[] = [
@@ -157,7 +184,8 @@ const section_datas: Section[] = [
 				timeline: 'Mar 2023 - Present',
 				content: `Currently, I'm working as Junior Software Developer at <a href="https://digia.com/en/" target="_blank" rel="external">Digia</a>. 
 				Digia is a Finnish SaaS company that provides Financial Solutions to clients. My main responsibilities are to develop and maintain the software 
-				according to the customers requirements.`
+				according to the customers requirements.<br/><br/>`,
+				stack: [csharp, visualbasic, sqldb, jquery, typescript, css3]
 			}
 		]
 	},
@@ -265,7 +293,7 @@ const section_datas: Section[] = [
 						type: LinkType.GitRepo
 					}
 				],
-				media: [{ ytid: 'tQpu81TbtpA', type: 'youtube', caption: 'Demo Video' }]
+				media: [{ ytid: 'tQpu81TbtpA', type: 'youtube', text: 'Demo Video' }]
 			},
 
 			{

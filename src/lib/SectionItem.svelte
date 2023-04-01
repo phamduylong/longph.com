@@ -33,13 +33,12 @@
 		{#if item.media !== undefined}
 			<br /><br />
 			{#each item.media as media}
-				{#if media.type === 'youtube'}
 					<a
 						href={'https://www.youtube.com/watch?v=' + media.ytid}
 						target="_blank"
 						rel="noreferrer"
 						class="underline hover:text-primary-green"
-						>{media.caption}
+						>{media.text}
 						<div class="relative overflow-hidden w-full lg:pt-[56.25%]">
 							<iframe
 								src={'https://www.youtube.com/embed/' + media.ytid}
@@ -51,7 +50,6 @@
 						</div>
 					</a>
 					<br />
-				{/if}
 			{/each}
 		{/if}
 
