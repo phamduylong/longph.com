@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { SectionItem } from './assets/types';
-	import { LinkType } from './assets/types';
+	import type { SectionItem } from '../assets/types';
+	import { LinkType } from '../assets/types';
 	import TechIcon from './TechIcon.svelte';
 	export let item: SectionItem;
 

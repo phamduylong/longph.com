@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import ContactItem from './ContactItem.svelte';
-	import { contact } from './assets/data';
+	import { contact } from '../assets/data';
 </script>
 
 <strong id="contact_section_header" class="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2vw">Contact</strong>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let classes: string = '';
-	import { theme } from './stores';
+	import { theme } from '../assets/stores';
 	$: icon = $theme === 'dark' ? '☀️' : '🌙';
 
 	async function toggleTheme(): Promise<void> {

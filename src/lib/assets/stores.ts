@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 import type { Writable } from 'svelte/store';
-import { asyncLocalStorage } from './assets/asyncLocalStorage';
+import { asyncLocalStorage } from './asyncLocalStorage';
 const STORAGE_KEY: string = 'stored-theme';
 
 function createThemeStore() {

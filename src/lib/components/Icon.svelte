@@ -1,5 +1,5 @@
-<script>
-	import img_url from '$lib/assets/pp.jpg';
+<script lang="ts">
+	import img_url from '../assets/pp.jpg';
 </script>
 
 <div id="icon_container" class="h-1/5 w-full absolute top-[5%]">

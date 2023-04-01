@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { SkillItem } from './assets/types';
+	import type { SkillItem } from '../assets/types';
 	import { Progressbar } from 'flowbite-svelte';
 	export let skill: SkillItem = { skill: '', progress: 0 };
 </script>

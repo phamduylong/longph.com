@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TechIcon } from './assets/types';
+	import type { TechIcon } from '../assets/types';
 	export let tech: TechIcon = { img: '', alt: '', url: '', text: '' };
 </script>
 

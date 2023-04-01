@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Section } from './assets/types';
+	import type { Section } from '../assets/types';
 	import SectionItem from './SectionItem.svelte';
 	export let section_data: Section;
 
