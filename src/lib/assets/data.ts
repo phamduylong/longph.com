@@ -11,6 +11,7 @@ import github_img_url from '$lib/assets/contact/github.svg';
 import phone_img_url from '$lib/assets/contact/phone.svg';
 import whatsapp_img_url from '$lib/assets/contact/whatsapp.svg';
 
+import bootstrap_img_url from '$lib/assets/tech/bootstrap.svg';
 import c_img_url from '$lib/assets/tech/c.svg';
 import chai_img_url from '$lib/assets/tech/chai.svg';
 import chartjs_img_url from '$lib/assets/tech/chartjs.svg';
@@ -34,6 +35,13 @@ import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 import typescript_img_url from '$lib/assets/tech/typescript.svg';
 import visualbasic_img_url from '$lib/assets/tech/visualbasic.svg';
 
+
+const bootstrap: TechIcon = {
+	img: bootstrap_img_url,
+	url: 'https://getbootstrap.com/',
+	alt: 'Bootstrap Logo',
+	text: 'Bootstrap'
+};
 const c: TechIcon = {
 	img: c_img_url,
 	url: 'https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html',
@@ -253,6 +261,26 @@ const section_datas: Section[] = [
 
 					{
 						href: 'https://github.com/phamduylong/truong-anh-ngok-quotes',
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
+					}
+				]
+			},
+
+			{
+				title: 'Technical Quiz Web App',
+				timeline: '2023',
+				content: ``,
+				stack: [csharp, html5, bootstrap, javascript, jquery],
+				links: [
+					{
+						href: 'https://technicalquiz20230403182930.azurewebsites.net/',
+						text: 'Demo App',
+						type: LinkType.Demo
+					},
+
+					{
+						href: 'https://github.com/phamduylong/TechnicalQuiz',
 						text: 'GitHub repository',
 						type: LinkType.GitRepo
 					}
