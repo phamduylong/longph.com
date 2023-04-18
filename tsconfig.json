@@ -12,9 +12,8 @@
 			"..",
 			"./types"
 		],
-		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
-		"preserveValueImports": true,
+		"verbatimModuleSyntax": true,
 		"lib": [
 			"esnext",
 			"DOM",
