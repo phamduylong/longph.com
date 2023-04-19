@@ -13,7 +13,7 @@
 			"./types"
 		],
 		"isolatedModules": true,
-		"verbatimModuleSyntax": true,
+		//"verbatimModuleSyntax": true,
 		"lib": [
 			"esnext",
 			"DOM",
