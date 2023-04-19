@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 const config = {
 	important: true,
 	content: [
@@ -49,24 +49,24 @@ const config = {
 			}
 		},
 		colors: {
-			'coral': '#ff7f50',
+			coral: '#ff7f50',
 			'primary-green': '#338566'
 		}
 	},
 
 	plugins: [
-		require('flowbite/plugin'), 		
+		require('flowbite/plugin'),
 		plugin(function ({ addBase }) {
-		addBase({
-			'.absolute-center': {
-				position: 'absolute',
-				top: '50%',
-				left: '50%',
-				transform: 'translate(-50%, -50%)'
-			}
+			addBase({
+				'.absolute-center': {
+					position: 'absolute',
+					top: '50%',
+					left: '50%',
+					transform: 'translate(-50%, -50%)'
+				}
+			});
 		})
-	}),
-],
+	],
 	darkMode: 'class'
 };
 

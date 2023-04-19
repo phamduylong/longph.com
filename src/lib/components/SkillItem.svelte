@@ -4,7 +4,7 @@
 	export let skill: SkillItem = { skill: '', progress: 0 };
 </script>
 
-<div class="relative inline-block h-[2%] mx-auto p-1/20 text-[1.25vw] w-full">
+<div class="relative mx-auto inline-block h-[2%] w-full p-1/20 text-[1.25vw]">
 	<div class="hidden lg:block">
 		{skill.skill}<Progressbar progress:{ skill.progress } size="h-3" color="green" />
 	</div>

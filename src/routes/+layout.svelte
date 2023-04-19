@@ -4,6 +4,7 @@
 	import { theme } from '../lib/assets/stores';
 	import '$lib/assets/styles/vendor.css';
 </script>
+
 <!-- Theme to be initiated here so that it doesn't flash a theme change before page content loads up -->
 {#await theme.init()}
 	<span />

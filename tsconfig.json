@@ -1,24 +1,13 @@
 {
 	"compilerOptions": {
 		"paths": {
-			"$lib": [
-				"../src/lib"
-			],
-			"$lib/*": [
-				"../src/lib/*"
-			]
+			"$lib": ["../src/lib"],
+			"$lib/*": ["../src/lib/*"]
 		},
-		"rootDirs": [
-			"..",
-			"./types"
-		],
+		"rootDirs": ["..", "./types"],
 		"isolatedModules": true,
-		"verbatimModuleSyntax": true,
-		"lib": [
-			"esnext",
-			"DOM",
-			"DOM.Iterable"
-		],
+		//"verbatimModuleSyntax": true,
+		"lib": ["esnext", "DOM", "DOM.Iterable"],
 		"moduleResolution": "node",
 		"module": "esnext",
 		"target": "esnext"
@@ -33,7 +22,5 @@
 		"../tests/**/*.ts",
 		"../tests/**/*.svelte"
 	],
-	"exclude": [
-		"./node_modules/**",
-	]
+	"exclude": ["./node_modules/**"]
 }

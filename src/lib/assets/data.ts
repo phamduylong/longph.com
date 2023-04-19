@@ -35,7 +35,6 @@ import tailwindcss_img_url from '$lib/assets/tech/tailwindcss.svg';
 import typescript_img_url from '$lib/assets/tech/typescript.svg';
 import visualbasic_img_url from '$lib/assets/tech/visualbasic.svg';
 
-
 const bootstrap: TechIcon = {
 	img: bootstrap_img_url,
 	url: 'https://getbootstrap.com/',
@@ -126,7 +125,12 @@ const mongodb: TechIcon = {
 	alt: 'MongoDB Logo',
 	text: 'MongoDB'
 };
-const nodejs: TechIcon = { img: nodejs_img_url, url: 'https://nodejs.org/en/', alt: 'NodeJs Logo', text: 'NodeJs' };
+const nodejs: TechIcon = {
+	img: nodejs_img_url,
+	url: 'https://nodejs.org/en/',
+	alt: 'NodeJs Logo',
+	text: 'NodeJs'
+};
 const python: TechIcon = {
 	img: python_img_url,
 	url: 'https://www.python.org/',
@@ -226,8 +230,16 @@ const section_datas: Section[] = [
 				or click the roll button below the quote 🔃<br/><br/>`,
 				stack: [svelte, html5, css3, tailwindcss, javascript],
 				links: [
-					{ href: 'https://random-netflix-quotes.vercel.app/', text: 'Demo App', type: LinkType.Demo },
-					{ href: 'https://github.com/phamduylong/RandomNetflixQuotes', text: 'GitHub repository', type: LinkType.GitRepo }
+					{
+						href: 'https://random-netflix-quotes.vercel.app/',
+						text: 'Demo App',
+						type: LinkType.Demo
+					},
+					{
+						href: 'https://github.com/phamduylong/RandomNetflixQuotes',
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
+					}
 				]
 			},
 
@@ -239,8 +251,16 @@ const section_datas: Section[] = [
                 libraries, deploying and much more than that.<br/><br/>`,
 				stack: [svelte, html5, css3, tailwindcss, typescript],
 				links: [
-					{ href: 'https://shopping-list-phamduylong.vercel.app/', text: 'Demo App', type: LinkType.Demo },
-					{ href: 'https://github.com/phamduylong/ShoppingList', text: 'GitHub repository', type: LinkType.GitRepo }
+					{
+						href: 'https://shopping-list-phamduylong.vercel.app/',
+						text: 'Demo App',
+						type: LinkType.Demo
+					},
+					{
+						href: 'https://github.com/phamduylong/ShoppingList',
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
+					}
 				]
 			},
 
@@ -336,7 +356,11 @@ const section_datas: Section[] = [
 						text: 'Repl',
 						type: LinkType.Demo
 					},
-					{ href: 'https://github.com/phamduylong/FootballRecord', text: 'GitHub repository', type: LinkType.GitRepo }
+					{
+						href: 'https://github.com/phamduylong/FootballRecord',
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
+					}
 				]
 			}
 		]

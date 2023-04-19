@@ -33,23 +33,23 @@
 		{#if item.media !== undefined}
 			<br /><br />
 			{#each item.media as media}
-					<a
-						href={'https://www.youtube.com/watch?v=' + media.ytid}
-						target="_blank"
-						rel="noreferrer"
-						class="underline hover:text-primary-green"
-						>{media.text}
-						<div class="relative overflow-hidden w-full lg:pt-[56.25%]">
-							<iframe
-								src={'https://www.youtube.com/embed/' + media.ytid}
-								title="Demo"
-								loading="lazy"
-								allowfullscreen={true}
-								class="w-full h-full border border-solid border-primary-green resize lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 lg:border-[4px]"
-							/>
-						</div>
-					</a>
-					<br />
+				<a
+					href={'https://www.youtube.com/watch?v=' + media.ytid}
+					target="_blank"
+					rel="noreferrer"
+					class="underline hover:text-primary-green"
+					>{media.text}
+					<div class="relative w-full overflow-hidden lg:pt-[56.25%]">
+						<iframe
+							src={'https://www.youtube.com/embed/' + media.ytid}
+							title="Demo"
+							loading="lazy"
+							allowfullscreen={true}
+							class="h-full w-full resize border border-solid border-primary-green lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 lg:border-[4px]"
+						/>
+					</div>
+				</a>
+				<br />
 			{/each}
 		{/if}
 
@@ -64,8 +64,14 @@
 						rel="noreferrer"
 						class="underline hover:text-primary-green"
 						>{hl.text}
-						<div class="relative overflow-hidden w-full lg:pt-[56.25%]"><iframe src={hl.href} title="Demo" loading="lazy" 
-							class="w-full h-full border border-solid border-primary-green resize lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 lg:border-[4px]"/></div>
+						<div class="relative w-full overflow-hidden lg:pt-[56.25%]">
+							<iframe
+								src={hl.href}
+								title="Demo"
+								loading="lazy"
+								class="h-full w-full resize border border-solid border-primary-green lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 lg:border-[4px]"
+							/>
+						</div>
 					</a><br />
 				{:else if hl.type === LinkType.GitRepo}
 					<a
