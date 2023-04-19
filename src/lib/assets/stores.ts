@@ -4,7 +4,7 @@ import { asyncLocalStorage } from './asyncLocalStorage';
 const STORAGE_KEY: string = 'stored-theme';
 
 function createThemeStore() {
-	const { subscribe, set } : Writable<string> = writable('dark');
+	const { subscribe, set }: Writable<string> = writable('dark');
 
 	return {
 		subscribe,

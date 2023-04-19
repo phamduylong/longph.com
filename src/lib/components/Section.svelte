@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div id="wrapper" class="text-3vw m-1/10 p-1/100">
+<div id="wrapper" class="m-1/10 p-1/100 text-3vw">
 	<p id={removeWhitespaces(section_data.title)}>
 		<a class="text-primary-green" href={'#' + removeWhitespaces(section_data.title)}
 			>{section_data.title.toUpperCase()}</a
