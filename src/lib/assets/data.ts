@@ -290,7 +290,8 @@ const section_datas: Section[] = [
 			{
 				title: 'Technical Quiz Web App',
 				timeline: '2023',
-				content: ``,
+				content: `A web app containing random technical quizzes for people to test their knowledge. The app is written with ASP.NET Core MVC
+				and Razor pages along with Bootstrap 5. The app is hosted on Azure App Service on a free tier.`,
 				stack: [csharp, html5, bootstrap, javascript, jquery],
 				links: [
 					{
