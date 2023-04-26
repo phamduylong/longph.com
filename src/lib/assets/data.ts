@@ -19,6 +19,7 @@ import cpp_img_url from '$lib/assets/tech/cpp.svg';
 import c_sharp_img_url from '$lib/assets/tech/csharp.svg';
 import css3_img_url from '$lib/assets/tech/css3.svg';
 import cypress_img_url from '$lib/assets/tech/cypress.svg';
+import dotnet_img_url from '$lib/assets/tech/dotnet.svg';
 import ejs_img_url from '$lib/assets/tech/ejs.svg';
 import express_img_url from '$lib/assets/tech/express.svg';
 import html5_img_url from '$lib/assets/tech/html5.svg';
@@ -27,6 +28,7 @@ import jquery_img_url from '$lib/assets/tech/jquery.svg';
 import mocha_img_url from '$lib/assets/tech/mocha.svg';
 import mongodb_img_url from '$lib/assets/tech/mongodb.svg';
 import nodejs_img_url from '$lib/assets/tech/nodejs.svg';
+import nuget_img_url from '$lib/assets/tech/nuget.svg';
 import python_img_url from '$lib/assets/tech/python.svg';
 import robotframework_img_url from '$lib/assets/tech/robotframework.svg';
 import sqldb_img_url from '$lib/assets/tech/sqldb.svg';
@@ -83,6 +85,12 @@ const cypress: TechIcon = {
 	alt: 'Cypress Logo',
 	text: 'Cypress Testing Framework'
 };
+const dotnet: TechIcon = {
+	img: dotnet_img_url,
+	url: 'https://dotnet.microsoft.com/',
+	alt: '.NET Logo',
+	text: '.NET Framework'	
+};
 const ejs: TechIcon = {
 	img: ejs_img_url,
 	url: 'https://ejs.co/',
@@ -131,6 +139,12 @@ const nodejs: TechIcon = {
 	alt: 'NodeJs Logo',
 	text: 'NodeJs'
 };
+const nuget: TechIcon = {
+	img: nuget_img_url,
+	url: 'https://www.nuget.org/',
+	alt: 'NuGet Logo',
+	text: 'NuGet Package Manager'
+}
 const python: TechIcon = {
 	img: python_img_url,
 	url: 'https://www.python.org/',
@@ -197,7 +211,7 @@ const section_datas: Section[] = [
 				content: `Currently, I'm working as Junior Software Developer at <a href="https://digia.com/en/" target="_blank" rel="external">Digia</a>. 
 				Digia is a Finnish SaaS company that provides Financial Solutions to clients. My main responsibilities are to develop and maintain the software 
 				according to the customers requirements.<br/><br/>`,
-				stack: [csharp, visualbasic, sqldb, jquery, typescript, css3]
+				stack: [csharp, visualbasic, dotnet, nuget, sqldb, jquery, typescript, css3]
 			}
 		]
 	},
@@ -292,7 +306,7 @@ const section_datas: Section[] = [
 				timeline: '2023',
 				content: `A web app containing random technical quizzes for people to test their knowledge. The app is written with ASP.NET Core MVC
 				and Razor pages along with Bootstrap 5. The app is hosted on Azure App Service on a free tier.`,
-				stack: [csharp, html5, bootstrap, javascript, jquery],
+				stack: [csharp, dotnet, nuget, html5, bootstrap, javascript, jquery],
 				links: [
 					{
 						href: 'https://technicalquiz20230403182930.azurewebsites.net/',
@@ -343,26 +357,6 @@ const section_datas: Section[] = [
 					}
 				],
 				media: [{ ytid: 'tQpu81TbtpA', type: 'youtube', text: 'Demo Video' }]
-			},
-
-			{
-				title: 'Football Record Book',
-				timeline: '2021',
-				content: `A console application written in C++ (Cpp11 or higher). The application will store football match records in a text-based database file, 
-                whose content can be seen on the console by choosing some specific commands on the menu.<br/><br/>`,
-				stack: [cpp],
-				links: [
-					{
-						href: 'https://replit.com/@PhamLong1/FootballRecord?embed=true',
-						text: 'Repl',
-						type: LinkType.Demo
-					},
-					{
-						href: 'https://github.com/phamduylong/FootballRecord',
-						text: 'GitHub repository',
-						type: LinkType.GitRepo
-					}
-				]
 			}
 		]
 	}
