@@ -89,7 +89,7 @@ const dotnet: TechIcon = {
 	img: dotnet_img_url,
 	url: 'https://dotnet.microsoft.com/',
 	alt: '.NET Logo',
-	text: '.NET Framework'	
+	text: '.NET Framework'
 };
 const ejs: TechIcon = {
 	img: ejs_img_url,
@@ -144,7 +144,7 @@ const nuget: TechIcon = {
 	url: 'https://www.nuget.org/',
 	alt: 'NuGet Logo',
 	text: 'NuGet Package Manager'
-}
+};
 const python: TechIcon = {
 	img: python_img_url,
 	url: 'https://www.python.org/',
@@ -305,15 +305,9 @@ const section_datas: Section[] = [
 				title: 'Technical Quiz Web App',
 				timeline: '2023',
 				content: `A web app containing random technical quizzes for people to test their knowledge. The app is written with ASP.NET Core MVC
-				and Razor pages along with Bootstrap 5. The app is hosted on Azure App Service on a free tier.`,
+				and Razor pages along with Bootstrap 5.`,
 				stack: [csharp, dotnet, nuget, html5, bootstrap, javascript, jquery],
 				links: [
-					{
-						href: 'https://technicalquiz20230403182930.azurewebsites.net/',
-						text: 'Demo App',
-						type: LinkType.Demo
-					},
-
 					{
 						href: 'https://github.com/phamduylong/TechnicalQuiz',
 						text: 'GitHub repository',
