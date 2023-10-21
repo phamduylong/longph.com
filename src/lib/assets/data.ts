@@ -357,26 +357,21 @@ const section_datas: Section[] = [
 ];
 
 const skills: SkillItem[] = [
-	{ skill: 'NodeJs', progress: 70 },
-	{ skill: 'Express', progress: 70 },
-	{ skill: 'EJS Template', progress: 60 },
+	{ skill: 'ExpressJs', progress: 70 },
 	{ skill: 'MongoDB', progress: 50 },
-	{ skill: 'SQL', progress: 50 },
-	{ skill: 'Svelte', progress: 50 },
+	{ skill: 'SQL Server', progress: 50 },
+	{ skill: 'SvelteKit', progress: 50 },
 	{ skill: 'TypeScript', progress: 40 },
 	{ skill: 'HTML5', progress: 50 },
-	{ skill: 'CSS3', progress: 40 },
 	{ skill: 'Tailwind CSS', progress: 40 },
 	{ skill: 'C#', progress: 50 },
-	{ skill: 'Visual Basic', progress: 30 },
-	{ skill: 'Bootstrap', progress: 40 },
-	{ skill: 'C', progress: 60 },
-	{ skill: 'C++', progress: 70 },
-	{ skill: 'Arduino', progress: 60 },
+	{ skill: 'Visual Basic', progress: 40 },
+	{ skill: '.NET Framework', progress: 50 },
+	{ skill: 'C++', progress: 60 },
 	{ skill: 'Python', progress: 60 },
 	{ skill: 'Linux', progress: 50 },
 	{ skill: 'Bash', progress: 50 },
-	{ skill: 'Git', progress: 70 }
+	{ skill: 'Git Version Control', progress: 60 }
 ];
 
 const contact: ContactItem[] = [
@@ -388,8 +383,8 @@ const contact: ContactItem[] = [
 	},
 	{
 		img: discord_img_url,
-		content: 'PhDLong#0475',
-		url: 'https://discordapp.com/users/747107129625804870'
+		content: 'longph',
+		url: 'https://discordapp.com/users/longph'
 	},
 	{ img: github_img_url, content: 'phamduylong', url: 'https://github.com/phamduylong' },
 	{ img: hackerrank_img_url, content: 'phdlong', url: 'https://www.hackerrank.com/phdlong' },
@@ -412,4 +407,4 @@ const contact: ContactItem[] = [
 	}
 ];
 
-export { section_datas as section_datas, skills as skills, contact as contact };
+export { section_datas, skills, contact };
