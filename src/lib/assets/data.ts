@@ -166,8 +166,8 @@ const sqldb: TechIcon = {
 const svelte: TechIcon = {
 	img: svelte_img_url,
 	url: 'https://svelte.dev/',
-	alt: 'Svelte Framework Logo',
-	text: 'Svelte Framework'
+	alt: 'SvelteKit Framework Logo',
+	text: 'SvelteKit Framework'
 };
 const tailwindcss: TechIcon = {
 	img: tailwindcss_img_url,
@@ -351,6 +351,27 @@ const section_datas: Section[] = [
 					}
 				],
 				media: [{ ytid: 'tQpu81TbtpA', type: 'youtube', text: 'Demo Video' }]
+			}
+		]
+	},
+
+	{
+		title: "Open Source Contributions",
+		entries: [
+			{
+				title: 'Skeleton',
+				timeline: '2023',
+				content: `Skeleton is a fully featured UI Toolkit for building reactive interfaces quickly using Svelte and Tailwind. I found Skeleton awesome as the
+				core team of maintainers are super responsive and helpful. The library is stacked with useful components and utilities, carefully documented and feels very
+				intuitive to use. I have contributed to fixing bugs spotted by me and other users, as well as enhancing the documentation in various places.<br/><br/>`,
+				stack: [svelte, html5, tailwindcss, typescript],
+				links: [
+					{
+						href: 'https://github.com/skeletonlabs/skeleton',
+						text: 'GitHub repository',
+						type: LinkType.GitRepo
+					}
+				]
 			}
 		]
 	}
